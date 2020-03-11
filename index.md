@@ -1,467 +1,546 @@
 <!DOCTYPE html>
-<html class='v2' dir='ltr' lang='vi'>
+<html class='v2' dir='ltr' lang='vi' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WZYW43CYY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<link href='https://www.blogger.com/static/v1/widgets/3597120983-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-3WZYW43CYY'></script>
+<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
 
-        gtag('config', 'G-3WZYW43CYY');
-    </script>
-	<!-- <!-- Google Analytics --> -->
-	<!-- <script> -->
-	<!-- (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ -->
-	<!-- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), -->
-	<!-- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) -->
-	<!-- })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); -->
-
-	<!-- ga('create', 'UA-XXXXX-Y', 'auto'); -->
-	<!-- ga('send', 'pageview'); -->
-	<!-- </script> -->
-<!-- End Google Analytics -->
-<!-- Google Analytics -->
-	<script>
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-3WZYW43CYY', 'auto');
-	ga('send', 'pageview');
+  		gtag('config', 'G-3WZYW43CYY');
 	</script>
-	<script async src='https://www.google-analytics.com/analytics.js'></script>
-	<!-- End Google Analytics -->
-	
-    <link href='https://www.blogger.com/static/v1/widgets/3597120983-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
-    <meta content='width=1100' name='viewport'/>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-    <meta content='blogger' name='generator'/>
-    <link href='https://thanhdz2017.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
-    <link href='https://thanhdz2017.blogspot.com/' rel='canonical'/>
-    <link rel="alternate" type="application/atom+xml" title="Duy Thành Vlogs - Học Tin học Online - Atom" href="https://thanhdz2017.blogspot.com/feeds/posts/default" />
-    <link rel="alternate" type="application/rss+xml" title="Duy Thành Vlogs - Học Tin học Online - RSS" href="https://thanhdz2017.blogspot.com/feeds/posts/default?alt=rss" />
-    <link rel="service.post" type="application/atom+xml" title="Duy Thành Vlogs - Học Tin học Online - Atom" href="https://www.blogger.com/feeds/7179935887427254041/posts/default" />
-    <link rel="me" href="https://www.blogger.com/profile/07247626638139993142" />
-    <!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/1894580631-ieretrofit.js"></script>
-    <![endif]-->
-    <meta content='Bạn muốn tìm gì?' name='description'/>
-    <meta content='https://thanhdz2017.blogspot.com/' property='og:url'/>
-    <meta content='Duy Thành Vlogs - Học Tin học Online' property='og:title'/>
-    <meta content='Bạn muốn tìm gì?' property='og:description'/>
-    <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
-    <title>Duy Thành Vlogs - Học Tin học Online</title>
-    <style id='page-skin-1' type='text/css'><!--
-    /*-----------------------------------------------
-    Blogger Template Style
-    Name:     Picture Window
-    Designer: Blogger
-    URL:      www.blogger.com
-    ----------------------------------------------- */
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='https://thanhdz2017.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://thanhdz2017.blogspot.com/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Duy Thành Vlogs - Học Tin học Online - Atom" href="https://thanhdz2017.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Duy Thành Vlogs - Học Tin học Online - RSS" href="https://thanhdz2017.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Duy Thành Vlogs - Học Tin học Online - Atom" href="https://www.blogger.com/feeds/7179935887427254041/posts/default" />
+<link rel="me" href="https://www.blogger.com/profile/07247626638139993142" />
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/1894580631-ieretrofit.js"></script>
+<![endif]-->
+<meta content='Bạn muốn tìm gì?' name='description'/>
+<meta content='https://thanhdz2017.blogspot.com/' property='og:url'/>
+<meta content='Duy Thành Vlogs - Học Tin học Online' property='og:title'/>
+<meta content='Bạn muốn tìm gì?' property='og:description'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Duy Thành Vlogs - Học Tin học Online</title>
+<style id='page-skin-1' type='text/css'><!--
+/*-----------------------------------------------
+Blogger Template Style
+Name:     Picture Window
+Designer: Blogger
+URL:      www.blogger.com
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#1a222a"/>
+<Variable name="body.background" description="Body Background" type="background"
+color="#111111" default="#111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center"/>
+<Group description="Page Text" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#333333"/>
+</Group>
+<Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#296695"/>
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent"/>
+<Variable name="post.background.color" description="Post Background" type="color" default="#ffffff"/>
+</Group>
+<Group description="Links" selector=".main-outer">
+<Variable name="link.color" description="Link Color" type="color" default="#336699"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#6699cc"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Title Font" type="font"
+default="normal normal 36px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Text Color" type="color" default="#ffffff" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#ffffff"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#336699"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="transparent"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="transparent"/>
+<Variable name="tabs.separator.color" description="Separator Color" type="color" default="transparent"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, .comments h4">
+<Variable name="post.title.font" description="Title Font" type="font"
+default="normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+</Group>
+<Group description="Date Header" selector=".date-header">
+<Variable name="date.header.color" description="Text Color" type="color" default="#333333"/>
+</Group>
+<Group description="Post" selector=".post">
+<Variable name="post.footer.text.color" description="Footer Text Color" type="color" default="#999999"/>
+<Variable name="post.border.color" description="Border Color" type="color" default="#dddddd"/>
+</Group>
+<Group description="Gadgets" selector="h2">
+<Variable name="widget.title.font" description="Title Font" type="font"
+default="bold normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#888888"/>
+</Group>
+<Group description="Footer" selector=".footer-outer">
+<Variable name="footer.text.color" description="Text Color" type="color" default="#cccccc"/>
+<Variable name="footer.widget.title.text.color" description="Gadget Title Color" type="color" default="#aaaaaa"/>
+</Group>
+<Group description="Footer Links" selector=".footer-outer">
+<Variable name="footer.link.color" description="Link Color" type="color" default="#99ccee"/>
+<Variable name="footer.link.visited.color" description="Visited Color" type="color" default="#77aaee"/>
+<Variable name="footer.link.hover.color" description="Hover Color" type="color" default="#33aaff"/>
+</Group>
+<Variable name="content.margin" description="Content Margin Top" type="length" default="20px" min="0" max="100px"/>
+<Variable name="content.padding" description="Content Padding" type="length" default="0" min="0" max="100px"/>
+<Variable name="content.background" description="Content Background" type="background"
+default="transparent none repeat scroll top left"/>
+<Variable name="content.border.radius" description="Content Border Radius" type="length" default="0" min="0" max="100px"/>
+<Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="0" min="0" max="100px"/>
+<Variable name="header.padding" description="Header Padding" type="length" default="0" min="0" max="100px"/>
+<Variable name="header.background.gradient" description="Header Gradient" type="url"
+default="none"/>
+<Variable name="header.border.radius" description="Header Border Radius" type="length" default="0" min="0" max="100px"/>
+<Variable name="main.border.radius.top" description="Main Border Radius" type="length" default="20px" min="0" max="100px"/>
+<Variable name="footer.border.radius.top" description="Footer Border Radius Top" type="length" default="0" min="0" max="100px"/>
+<Variable name="footer.border.radius.bottom" description="Footer Border Radius Bottom" type="length" default="20px" min="0" max="100px"/>
+<Variable name="region.shadow.spread" description="Main and Footer Shadow Spread" type="length" default="3px" min="0" max="100px"/>
+<Variable name="region.shadow.offset" description="Main and Footer Shadow Offset" type="length" default="1px" min="-50px" max="50px"/>
+<Variable name="tabs.background.gradient" description="Tab Background Gradient" type="url" default="none"/>
+<Variable name="tab.selected.background.gradient" description="Selected Tab Background" type="url"
+default="url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png)"/>
+<Variable name="tab.background" description="Tab Background" type="background"
+default="transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left"/>
+<Variable name="tab.border.radius" description="Tab Border Radius" type="length" default="10px" min="0" max="100px"/>
+<Variable name="tab.first.border.radius" description="First Tab Border Radius" type="length" default="10px" min="0" max="100px"/>
+<Variable name="tabs.border.radius" description="Tabs Border Radius" type="length" default="0" min="0" max="100px"/>
+<Variable name="tabs.spacing" description="Tab Spacing" type="length" default=".25em" min="0" max="10em"/>
+<Variable name="tabs.margin.bottom" description="Tab Margin Bottom" type="length" default="0" min="0" max="100px"/>
+<Variable name="tabs.margin.sides" description="Tab Margin Sides" type="length" default="20px" min="0" max="100px"/>
+<Variable name="main.background" description="Main Background" type="background"
+default="transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left"/>
+<Variable name="main.padding.sides" description="Main Padding Sides" type="length" default="20px" min="0" max="100px"/>
+<Variable name="footer.background" description="Footer Background" type="background"
+default="transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left"/>
+<Variable name="post.margin.sides" description="Post Margin Sides" type="length" default="-20px" min="-50px" max="50px"/>
+<Variable name="post.border.radius" description="Post Border Radius" type="length" default="5px" min="0" max="100px"/>
+<Variable name="widget.title.text.transform" description="Widget Title Text Transform" type="string" default="uppercase"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+background: #111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+.content-outer {
+font-size: 90%;
+}
+a:link {
+text-decoration:none;
+color: #336699;
+}
+a:visited {
+text-decoration:none;
+color: #6699cc;
+}
+a:hover {
+text-decoration:underline;
+color: #33aaff;
+}
+.content-outer {
+background: transparent none repeat scroll top left;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+margin: 20px auto;
+}
+.content-inner {
+padding: 0;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+color: #ffffff;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+}
+.Header img, .Header #header-inner {
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+}
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+padding-left: 0;
+padding-right: 0;
+}
+.Header h1 {
+font: normal normal 36px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.Header h1 a {
+color: #ffffff;
+}
+.Header .description {
+font-size: 130%;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner {
+margin: .5em 20px 0;
+padding: 0;
+}
+.tabs-inner .section {
+margin: 0;
+}
+.tabs-inner .widget ul {
+padding: 0;
+background: transparent none repeat scroll bottom;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+}
+.tabs-inner .widget li {
+border: none;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .5em 1em;
+margin-right: .25em;
+color: #ffffff;
+font: normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+-moz-border-radius: 10px 10px 0 0;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-goog-ms-border-radius: 10px 10px 0 0;
+border-radius: 10px 10px 0 0;
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left;
+border-right: 1px solid transparent;
+}
+.tabs-inner .widget li:first-child a {
+padding-left: 1.25em;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-bottomleft: 0;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-bottom-left-radius: 0;
+-goog-ms-border-top-left-radius: 10px;
+-goog-ms-border-bottom-left-radius: 0;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 0;
+}
+.tabs-inner .widget li.selected a,
+.tabs-inner .widget li a:hover {
+position: relative;
+z-index: 1;
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll bottom;
+color: #336699;
+-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+font: bold normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+text-transform: uppercase;
+color: #888888;
+margin: .5em 0;
+}
+/* Main
+----------------------------------------------- */
+.main-outer {
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left;
+-moz-border-radius: 20px 20px 0 0;
+-webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 20px;
+-webkit-border-bottom-left-radius: 0;
+-webkit-border-bottom-right-radius: 0;
+-goog-ms-border-radius: 20px 20px 0 0;
+border-radius: 20px 20px 0 0;
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+}
+.main-inner {
+padding: 15px 20px 20px;
+}
+.main-inner .column-center-inner {
+padding: 0 0;
+}
+.main-inner .column-left-inner {
+padding-left: 0;
+}
+.main-inner .column-right-inner {
+padding-right: 0;
+}
+/* Posts
+----------------------------------------------- */
+h3.post-title {
+margin: 0;
+font: normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.comments h4 {
+margin: 1em 0 0;
+font: normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.date-header span {
+color: #333333;
+}
+.post-outer {
+background-color: #ffffff;
+border: solid 1px #dddddd;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-goog-ms-border-radius: 5px;
+padding: 15px 20px;
+margin: 0 -20px 20px;
+}
+.post-body {
+line-height: 1.4;
+font-size: 110%;
+position: relative;
+}
+.post-header {
+margin: 0 0 1.5em;
+color: #999999;
+line-height: 1.6;
+}
+.post-footer {
+margin: .5em 0 0;
+color: #999999;
+line-height: 1.6;
+}
+#blog-pager {
+font-size: 140%
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: dashed 1px #ccc;
+border-top: dashed 1px rgba(128, 128, 128, .5);
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #33aaff;
+border-bottom: 1px solid #33aaff;
+}
+.comments .continue {
+border-top: 2px solid #33aaff;
+}
+/* Widgets
+----------------------------------------------- */
+.widget ul, .widget #ArchiveList ul.flat {
+padding: 0;
+list-style: none;
+}
+.widget ul li, .widget #ArchiveList ul.flat li {
+border-top: dashed 1px #ccc;
+border-top: dashed 1px rgba(128, 128, 128, .5);
+}
+.widget ul li:first-child, .widget #ArchiveList ul.flat li:first-child {
+border-top: none;
+}
+.widget .post-body ul {
+list-style: disc;
+}
+.widget .post-body ul li {
+border: none;
+}
+/* Footer
+----------------------------------------------- */
+.footer-outer {
+color:#cccccc;
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left;
+-moz-border-radius: 0 0 20px 20px;
+-webkit-border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+-webkit-border-bottom-left-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
+-goog-ms-border-radius: 0 0 20px 20px;
+border-radius: 0 0 20px 20px;
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+}
+.footer-inner {
+padding: 10px 20px 20px;
+}
+.footer-outer a {
+color: #99ccee;
+}
+.footer-outer a:visited {
+color: #77aaee;
+}
+.footer-outer a:hover {
+color: #33aaff;
+}
+.footer-outer .widget h2 {
+color: #aaaaaa;
+}
+/* Mobile
+----------------------------------------------- */
+html body.mobile {
+height: auto;
+}
+html body.mobile {
+min-height: 480px;
+background-size: 100% auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+html .mobile .mobile-date-outer, html .mobile .blog-pager {
+border-bottom: none;
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left;
+margin-bottom: 10px;
+}
+.mobile .date-outer {
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left;
+}
+.mobile .header-outer, .mobile .main-outer,
+.mobile .post-outer, .mobile .footer-outer {
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+}
+.mobile .content-outer,
+.mobile .main-outer,
+.mobile .post-outer {
+background: inherit;
+border: none;
+}
+.mobile .content-outer {
+font-size: 100%;
+}
+.mobile-link-button {
+background-color: #336699;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile-index-contents {
+color: #333333;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll bottom;
+color: #336699;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid transparent;
+}
 
-    /* Content
-    ----------------------------------------------- */
-    body {
-    font: normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
-    color: #333333;
-    background: #111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center;
-    }
-    html body .region-inner {
-    min-width: 0;
-    max-width: 100%;
-    width: auto;
-    }
-    .content-outer {
-    font-size: 90%;
-    }
-    a:link {
-    text-decoration:none;
-    color: #336699;
-    }
-    a:visited {
-    text-decoration:none;
-    color: #6699cc;
-    }
-    a:hover {
-    text-decoration:underline;
-    color: #33aaff;
-    }
-    .content-outer {
-    background: transparent none repeat scroll top left;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    -goog-ms-border-radius: 0;
-    border-radius: 0;
-    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
-    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
-    -goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
-    box-shadow: 0 0 0 rgba(0, 0, 0, .15);
-    margin: 20px auto;
-    }
-    .content-inner {
-    padding: 0;
-    }
-    /* Header
-    ----------------------------------------------- */
-    .header-outer {
-    background: transparent none repeat-x scroll top left;
-    _background-image: none;
-    color: #ffffff;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    -goog-ms-border-radius: 0;
-    border-radius: 0;
-    }
-    .Header img, .Header #header-inner {
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    -goog-ms-border-radius: 0;
-    border-radius: 0;
-    }
-    .header-inner .Header .titlewrapper,
-    .header-inner .Header .descriptionwrapper {
-    padding-left: 0;
-    padding-right: 0;
-    }
-    .Header h1 {
-    font: normal normal 36px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    }
-    .Header h1 a {
-    color: #ffffff;
-    }
-    .Header .description {
-    font-size: 130%;
-    }
-    /* Tabs
-    ----------------------------------------------- */
-    .tabs-inner {
-    margin: .5em 20px 0;
-    padding: 0;
-    }
-    .tabs-inner .section {
-    margin: 0;
-    }
-    .tabs-inner .widget ul {
-    padding: 0;
-    background: transparent none repeat scroll bottom;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    -goog-ms-border-radius: 0;
-    border-radius: 0;
-    }
-    .tabs-inner .widget li {
-    border: none;
-    }
-    .tabs-inner .widget li a {
-    display: inline-block;
-    padding: .5em 1em;
-    margin-right: .25em;
-    color: #ffffff;
-    font: normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
-    -moz-border-radius: 10px 10px 0 0;
-    -webkit-border-top-left-radius: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -goog-ms-border-radius: 10px 10px 0 0;
-    border-radius: 10px 10px 0 0;
-    background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left;
-    border-right: 1px solid transparent;
-    }
-    .tabs-inner .widget li:first-child a {
-    padding-left: 1.25em;
-    -moz-border-radius-topleft: 10px;
-    -moz-border-radius-bottomleft: 0;
-    -webkit-border-top-left-radius: 10px;
-    -webkit-border-bottom-left-radius: 0;
-    -goog-ms-border-top-left-radius: 10px;
-    -goog-ms-border-bottom-left-radius: 0;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 0;
-    }
-    .tabs-inner .widget li.selected a,
-    .tabs-inner .widget li a:hover {
-    position: relative;
-    z-index: 1;
-    background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll bottom;
-    color: #336699;
-    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
-    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
-    -goog-ms-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
-    box-shadow: 0 0 3px rgba(0, 0, 0, .15);
-    }
-    /* Headings
-    ----------------------------------------------- */
-    h2 {
-    font: bold normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
-    text-transform: uppercase;
-    color: #888888;
-    margin: .5em 0;
-    }
-    /* Main
-    ----------------------------------------------- */
-    .main-outer {
-    background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left;
-    -moz-border-radius: 20px 20px 0 0;
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -webkit-border-bottom-left-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-    -goog-ms-border-radius: 20px 20px 0 0;
-    border-radius: 20px 20px 0 0;
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-    -goog-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-    }
-    .main-inner {
-    padding: 15px 20px 20px;
-    }
-    .main-inner .column-center-inner {
-    padding: 0 0;
-    }
-    .main-inner .column-left-inner {
-    padding-left: 0;
-    }
-    .main-inner .column-right-inner {
-    padding-right: 0;
-    }
-    /* Posts
-    ----------------------------------------------- */
-    h3.post-title {
-    margin: 0;
-    font: normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
-    }
-    .comments h4 {
-    margin: 1em 0 0;
-    font: normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
-    }
-    .date-header span {
-    color: #333333;
-    }
-    .post-outer {
-    background-color: #ffffff;
-    border: solid 1px #dddddd;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -goog-ms-border-radius: 5px;
-    padding: 15px 20px;
-    margin: 0 -20px 20px;
-    }
-    .post-body {
-    line-height: 1.4;
-    font-size: 110%;
-    position: relative;
-    }
-    .post-header {
-    margin: 0 0 1.5em;
-    color: #999999;
-    line-height: 1.6;
-    }
-    .post-footer {
-    margin: .5em 0 0;
-    color: #999999;
-    line-height: 1.6;
-    }
-    #blog-pager {
-    font-size: 140%
-    }
-    #comments .comment-author {
-    padding-top: 1.5em;
-    border-top: dashed 1px #ccc;
-    border-top: dashed 1px rgba(128, 128, 128, .5);
-    background-position: 0 1.5em;
-    }
-    #comments .comment-author:first-child {
-    padding-top: 0;
-    border-top: none;
-    }
-    .avatar-image-container {
-    margin: .2em 0 0;
-    }
-    /* Comments
-    ----------------------------------------------- */
-    .comments .comments-content .icon.blog-author {
-    background-repeat: no-repeat;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
-    }
-    .comments .comments-content .loadmore a {
-    border-top: 1px solid #33aaff;
-    border-bottom: 1px solid #33aaff;
-    }
-    .comments .continue {
-    border-top: 2px solid #33aaff;
-    }
-    /* Widgets
-    ----------------------------------------------- */
-    .widget ul, .widget #ArchiveList ul.flat {
-    padding: 0;
-    list-style: none;
-    }
-    .widget ul li, .widget #ArchiveList ul.flat li {
-    border-top: dashed 1px #ccc;
-    border-top: dashed 1px rgba(128, 128, 128, .5);
-    }
-    .widget ul li:first-child, .widget #ArchiveList ul.flat li:first-child {
-    border-top: none;
-    }
-    .widget .post-body ul {
-    list-style: disc;
-    }
-    .widget .post-body ul li {
-    border: none;
-    }
-    /* Footer
-    ----------------------------------------------- */
-    .footer-outer {
-    color:#cccccc;
-    background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left;
-    -moz-border-radius: 0 0 20px 20px;
-    -webkit-border-top-left-radius: 0;
-    -webkit-border-top-right-radius: 0;
-    -webkit-border-bottom-left-radius: 20px;
-    -webkit-border-bottom-right-radius: 20px;
-    -goog-ms-border-radius: 0 0 20px 20px;
-    border-radius: 0 0 20px 20px;
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-    -goog-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-    }
-    .footer-inner {
-    padding: 10px 20px 20px;
-    }
-    .footer-outer a {
-    color: #99ccee;
-    }
-    .footer-outer a:visited {
-    color: #77aaee;
-    }
-    .footer-outer a:hover {
-    color: #33aaff;
-    }
-    .footer-outer .widget h2 {
-    color: #aaaaaa;
-    }
-    /* Mobile
-    ----------------------------------------------- */
-    html body.mobile {
-    height: auto;
-    }
-    html body.mobile {
-    min-height: 480px;
-    background-size: 100% auto;
-    }
-    .mobile .body-fauxcolumn-outer {
-    background: transparent none repeat scroll top left;
-    }
-    html .mobile .mobile-date-outer, html .mobile .blog-pager {
-    border-bottom: none;
-    background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left;
-    margin-bottom: 10px;
-    }
-    .mobile .date-outer {
-    background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left;
-    }
-    .mobile .header-outer, .mobile .main-outer,
-    .mobile .post-outer, .mobile .footer-outer {
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    -goog-ms-border-radius: 0;
-    border-radius: 0;
-    }
-    .mobile .content-outer,
-    .mobile .main-outer,
-    .mobile .post-outer {
-    background: inherit;
-    border: none;
-    }
-    .mobile .content-outer {
-    font-size: 100%;
-    }
-    .mobile-link-button {
-    background-color: #336699;
-    }
-    .mobile-link-button a:link, .mobile-link-button a:visited {
-    color: #ffffff;
-    }
-    .mobile-index-contents {
-    color: #333333;
-    }
-    .mobile .tabs-inner .PageList .widget-content {
-    background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll bottom;
-    color: #336699;
-    }
-    .mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
-    border-left: 1px solid transparent;
-    }
-
-    --></style>
-    <style id='template-skin-1' type='text/css'><!--
-    body {
-    min-width: 960px;
-    }
-    .content-outer, .content-fauxcolumn-outer, .region-inner {
-    min-width: 960px;
-    max-width: 960px;
-    _width: 960px;
-    }
-    .main-inner .columns {
-    padding-left: 0;
-    padding-right: 310px;
-    }
-    .main-inner .fauxcolumn-center-outer {
-    left: 0;
-    right: 310px;
-    /* IE6 does not respect left and right together */
-    _width: expression(this.parentNode.offsetWidth -
-    parseInt("0") -
-    parseInt("310px") + 'px');
-    }
-    .main-inner .fauxcolumn-left-outer {
-    width: 0;
-    }
-    .main-inner .fauxcolumn-right-outer {
-    width: 310px;
-    }
-    .main-inner .column-left-outer {
-    width: 0;
-    right: 100%;
-    margin-left: -0;
-    }
-    .main-inner .column-right-outer {
-    width: 310px;
-    margin-right: -310px;
-    }
-    #layout {
-    min-width: 0;
-    }
-    #layout .content-outer {
-    min-width: 0;
-    width: 800px;
-    }
-    #layout .region-inner {
-    min-width: 0;
-    width: auto;
-    }
-    body#layout div.add_widget {
-    padding: 8px;
-    }
-    body#layout div.add_widget a {
-    margin-left: 32px;
-    }
-    --></style>
-    <style>
-        body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa);}
-
-    @media (max-width: 200px) { body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa&options=w200);}}
-    @media (max-width: 400px) and (min-width: 201px) { body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa&options=w400);}}
-    @media (max-width: 800px) and (min-width: 401px) { body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa&options=w800);}}
-    @media (max-width: 1200px) and (min-width: 801px) { body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa&options=w1200);}}
-    /* Last tag covers anything over one higher than the previous max-size cap. */
-    @media (min-width: 1201px) { body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa&options=w1600);}}
-      </style>
-    <link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7179935887427254041&amp;zx=3f90b722-f4e2-478c-af3b-2b94b71510c1' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7179935887427254041&amp;zx=3f90b722-f4e2-478c-af3b-2b94b71510c1' rel='stylesheet'/></noscript>
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 310px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 310px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("310px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 310px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 310px;
+margin-right: -310px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+<style>
+    body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa);}
+    
+@media (max-width: 200px) { body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa&options=w200);}}
+@media (max-width: 400px) and (min-width: 201px) { body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa&options=w400);}}
+@media (max-width: 800px) and (min-width: 401px) { body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa&options=w800);}}
+@media (max-width: 1200px) and (min-width: 801px) { body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa&options=w1200);}}
+/* Last tag covers anything over one higher than the previous max-size cap. */
+@media (min-width: 1201px) { body {background-image:url(\/\/themes.googleusercontent.com\/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa&options=w1600);}}
+  </style>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7179935887427254041&amp;zx=d08107d5-36ee-44b4-abbd-b6716fc88f84' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7179935887427254041&amp;zx=d08107d5-36ee-44b4-abbd-b6716fc88f84' rel='stylesheet'/></noscript>
 
 </head>
-<body class='loading variant-open'>
+<body class='loading'>
 <div class='navbar section' id='navbar' name='Thanh điều hướng'><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
     function setAttributeOnload(object, attribute, val) {
       if(window.addEventListener) {
@@ -745,6 +824,84 @@ Tất cả nhận xét
 <div class='post-outer'>
 <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
 <meta content='7179935887427254041' itemprop='blogId'/>
+<meta content='5206803677619888702' itemprop='postId'/>
+<a name='5206803677619888702'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='https://thanhdz2017.blogspot.com/2020/03/web-game.html'>Web Game</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-5206803677619888702' itemprop='articleBody'>
+<a href="./blog-page_11.html">Web Game của tôi</a>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Bởi
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/07247626638139993142' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/07247626638139993142' rel='author' title='author profile'>
+<span itemprop='name'>Duy Thành Vlogs</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+vào lúc
+<meta content='https://thanhdz2017.blogspot.com/2020/03/web-game.html' itemprop='url'/>
+<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2020/03/web-game.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2020-03-11T10:30:00+07:00'>tháng 3 11, 2020</abbr></a>
+</span>
+<span class='reaction-buttons'>
+<table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
+<td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
+<span class='reactions-label'>
+Phản ứng:</span>&#160;</td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://thanhdz2017.blogspot.com/2020/03/web-game.html'></iframe></td>
+</tr></table>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://thanhdz2017.blogspot.com/2020/03/web-game.html#comment-form' onclick=''>
+Không có nhận xét nào:
+    </a>
+</span>
+<span class='post-backlinks post-comment-link'>
+<a class='comment-link' href='https://thanhdz2017.blogspot.com/2020/03/web-game.html#links'>Các liên kết với bài này</a>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='https://www.blogger.com/email-post.g?blogID=7179935887427254041&postID=5206803677619888702' title='Gửi Bài đăng qua email'>
+<img alt='' class='icon-action' height='13' src='https://resources.blogblog.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=7179935887427254041&postID=5206803677619888702&target=email' target='_blank' title='Gửi email bài đăng này'><span class='share-button-link-text'>Gửi email bài đăng này</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=7179935887427254041&postID=5206803677619888702&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=7179935887427254041&postID=5206803677619888702&target=twitter' target='_blank' title='Chia sẻ lên Twitter'><span class='share-button-link-text'>Chia sẻ lên Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=7179935887427254041&postID=5206803677619888702&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Chia sẻ lên Facebook'><span class='share-button-link-text'>Chia sẻ lên Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=7179935887427254041&postID=5206803677619888702&target=pinterest' target='_blank' title='Chia sẻ lên Pinterest'><span class='share-button-link-text'>Chia sẻ lên Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+          </div></div>
+        
+
+          <div class="date-outer">
+        
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='7179935887427254041' itemprop='blogId'/>
 <meta content='2566928160655478431' itemprop='postId'/>
 <a name='2566928160655478431'></a>
 <div class='post-header'>
@@ -768,7 +925,7 @@ Bởi
 <span class='post-timestamp'>
 vào lúc
 <meta content='https://thanhdz2017.blogspot.com/2020/03/width854-height480-srchttpswww.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2020/03/width854-height480-srchttpswww.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2020-03-09T19:04:00-07:00'>tháng 3 09, 2020</abbr></a>
+<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2020/03/width854-height480-srchttpswww.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2020-03-10T09:04:00+07:00'>tháng 3 10, 2020</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
@@ -847,7 +1004,7 @@ Bởi
 <span class='post-timestamp'>
 vào lúc
 <meta content='https://thanhdz2017.blogspot.com/2018/03/tao-virus-e-troll-ban-be-cai-lai-win.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/03/tao-virus-e-troll-ban-be-cai-lai-win.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-03-06T18:37:00-08:00'>tháng 3 06, 2018</abbr></a>
+<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/03/tao-virus-e-troll-ban-be-cai-lai-win.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-03-07T09:37:00+07:00'>tháng 3 07, 2018</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
@@ -926,7 +1083,7 @@ Bởi
 <span class='post-timestamp'>
 vào lúc
 <meta content='https://thanhdz2017.blogspot.com/2018/02/thong-bao-chinh-thuc-mo-tro-lai-kenh.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/02/thong-bao-chinh-thuc-mo-tro-lai-kenh.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-02-18T19:56:00-08:00'>tháng 2 18, 2018</abbr></a>
+<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/02/thong-bao-chinh-thuc-mo-tro-lai-kenh.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-02-19T10:56:00+07:00'>tháng 2 19, 2018</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
@@ -1005,7 +1162,7 @@ Bởi
 <span class='post-timestamp'>
 vào lúc
 <meta content='https://thanhdz2017.blogspot.com/2018/01/huong-dan-tao-virus-ransomware-on-gian.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/01/huong-dan-tao-virus-ransomware-on-gian.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-01-31T22:38:00-08:00'>tháng 1 31, 2018</abbr></a>
+<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/01/huong-dan-tao-virus-ransomware-on-gian.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-02-01T13:38:00+07:00'>tháng 2 01, 2018</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
@@ -1086,7 +1243,7 @@ Bởi
 <span class='post-timestamp'>
 vào lúc
 <meta content='https://thanhdz2017.blogspot.com/2018/01/cach-cai-at-adobe-photoshop-cs6-va-test.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/01/cach-cai-at-adobe-photoshop-cs6-va-test.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-01-24T00:59:00-08:00'>tháng 1 24, 2018</abbr></a>
+<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/01/cach-cai-at-adobe-photoshop-cs6-va-test.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-01-24T15:59:00+07:00'>tháng 1 24, 2018</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
@@ -1126,15 +1283,6 @@ Không có nhận xét nào:
 </div>
 </div>
 </div>
-
-          </div></div>
-        
-
-          <div class="date-outer">
-        
-
-          <div class="date-posts">
-        
 <div class='post-outer'>
 <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
 <meta content='https://i.ytimg.com/vi/LulgOpCGsK0/hqdefault.jpg' itemprop='image_url'/>
@@ -1173,7 +1321,7 @@ Bởi
 <span class='post-timestamp'>
 vào lúc
 <meta content='https://thanhdz2017.blogspot.com/2018/01/u23-viet-nam-2-2-u23-qatar-pen-4-3-cam.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/01/u23-viet-nam-2-2-u23-qatar-pen-4-3-cam.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-01-23T23:14:00-08:00'>tháng 1 23, 2018</abbr></a>
+<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/01/u23-viet-nam-2-2-u23-qatar-pen-4-3-cam.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-01-24T14:14:00+07:00'>tháng 1 24, 2018</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
@@ -1214,95 +1362,12 @@ Không có nhận xét nào:
 </div>
 </div>
 
-          </div></div>
-        
-
-          <div class="date-outer">
-        
-
-          <div class="date-posts">
-        
-<div class='post-outer'>
-<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
-<meta content='https://i.ytimg.com/vi/6TUOSBPCygs/hqdefault.jpg' itemprop='image_url'/>
-<meta content='7179935887427254041' itemprop='blogId'/>
-<meta content='1766428981575629926' itemprop='postId'/>
-<a name='1766428981575629926'></a>
-<h3 class='post-title entry-title' itemprop='name'>
-<a href='https://thanhdz2017.blogspot.com/2018/01/anh-tho-nu-em-gai-mua-parody-leg.html'>Anh Thơ Nụ ( Em Gái Mưa Parody ) - LEG</a>
-</h3>
-<div class='post-header'>
-<div class='post-header-line-1'></div>
-</div>
-<div class='post-body entry-content' id='post-body-1766428981575629926' itemprop='articleBody'>
-<iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/6TUOSBPCygs" width="480"></iframe><br /><br />
-<br /><br />
-<span style="background-color: white; color: #333333; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 14.85px;">Mình không giữ nội dung của video này, mình chỉ chia sẻ lại bằng cách nhúng</span><br /><br />
-<span style="background-color: white; color: #333333; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 14.85px;"><br /></span><br />
-<span style="color: #333333; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif;"><span style="background-color: white; font-size: 14.85px;">Link video gốc:<a href="https://youtu.be/6TUOSBPCygs" target="_blank">https://youtu.be/6TUOSBPCygs</a></span></span>
-<div style='clear: both;'></div>
-</div>
-<div class='post-footer'>
-<div class='post-footer-line post-footer-line-1'>
-<span class='post-author vcard'>
-Bởi
-<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
-<meta content='https://www.blogger.com/profile/07247626638139993142' itemprop='url'/>
-<a class='g-profile' href='https://www.blogger.com/profile/07247626638139993142' rel='author' title='author profile'>
-<span itemprop='name'>Duy Thành Vlogs</span>
-</a>
-</span>
-</span>
-<span class='post-timestamp'>
-vào lúc
-<meta content='https://thanhdz2017.blogspot.com/2018/01/anh-tho-nu-em-gai-mua-parody-leg.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/01/anh-tho-nu-em-gai-mua-parody-leg.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-01-19T00:59:00-08:00'>tháng 1 19, 2018</abbr></a>
-</span>
-<span class='reaction-buttons'>
-<table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
-<td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
-<span class='reactions-label'>
-Phản ứng:</span>&#160;</td>
-<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://thanhdz2017.blogspot.com/2018/01/anh-tho-nu-em-gai-mua-parody-leg.html'></iframe></td>
-</tr></table>
-</span>
-<span class='post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2018/01/anh-tho-nu-em-gai-mua-parody-leg.html#comment-form' onclick=''>
-Không có nhận xét nào:
-    </a>
-</span>
-<span class='post-backlinks post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2018/01/anh-tho-nu-em-gai-mua-parody-leg.html#links'>Các liên kết với bài này</a>
-</span>
-<span class='post-icons'>
-<span class='item-action'>
-<a href='https://www.blogger.com/email-post.g?blogID=7179935887427254041&postID=1766428981575629926' title='Gửi Bài đăng qua email'>
-<img alt='' class='icon-action' height='13' src='https://resources.blogblog.com/img/icon18_email.gif' width='18'/>
-</a>
-</span>
-</span>
-<div class='post-share-buttons goog-inline-block'>
-<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=7179935887427254041&postID=1766428981575629926&target=email' target='_blank' title='Gửi email bài đăng này'><span class='share-button-link-text'>Gửi email bài đăng này</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=7179935887427254041&postID=1766428981575629926&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=7179935887427254041&postID=1766428981575629926&target=twitter' target='_blank' title='Chia sẻ lên Twitter'><span class='share-button-link-text'>Chia sẻ lên Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=7179935887427254041&postID=1766428981575629926&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Chia sẻ lên Facebook'><span class='share-button-link-text'>Chia sẻ lên Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=7179935887427254041&postID=1766428981575629926&target=pinterest' target='_blank' title='Chia sẻ lên Pinterest'><span class='share-button-link-text'>Chia sẻ lên Pinterest</span></a>
-</div>
-</div>
-<div class='post-footer-line post-footer-line-2'>
-<span class='post-labels'>
-</span>
-</div>
-<div class='post-footer-line post-footer-line-3'>
-<span class='post-location'>
-</span>
-</div>
-</div>
-</div>
-</div>
-
         </div></div>
       
 </div>
 <div class='blog-pager' id='blog-pager'>
 <span id='blog-pager-older-link'>
-<a class='blog-pager-older-link' href='https://thanhdz2017.blogspot.com/search?updated-max=2018-01-19T00:59:00-08:00&amp;max-results=7' id='Blog1_blog-pager-older-link' title='Bài đăng cũ hơn'>Bài đăng cũ hơn</a>
+<a class='blog-pager-older-link' href='https://thanhdz2017.blogspot.com/search?updated-max=2018-01-24T14:14:00%2B07:00&amp;max-results=7' id='Blog1_blog-pager-older-link' title='Bài đăng cũ hơn'>Bài đăng cũ hơn</a>
 </span>
 <a class='home-link' href='https://thanhdz2017.blogspot.com/'>Trang chủ</a>
 </div>
@@ -1316,8 +1381,9 @@ Không có nhận xét nào:
 </div><div class='widget FeaturedPost' data-version='1' id='FeaturedPost1'>
 <h2 class='title'>Các bài đã đăng của tôi</h2>
 <div class='post-summary'>
+<h3><a href='https://thanhdz2017.blogspot.com/2020/03/web-game.html'>Web Game</a></h3>
 <p>
-&lt;iframe width=&quot;854&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/1tzKtL-CUGg?ecver=1&quot; frameborder=&quot;...
+Web Game của tôi
 </p>
 </div>
 <style type='text/css'>
@@ -1364,12 +1430,13 @@ Không có nhận xét nào:
 <li>
 <div class='item-content'>
 <div class='item-thumbnail'>
-<a href='https://thanhdz2017.blogspot.com/2018/01/song-chung-voi-me-vo-leg.html' target='_blank'>
-<img alt='' border='0' src='https://lh5.googleusercontent.com/proxy/_a8RV09XAyK0EuI7zuWmeAlEspVGq5wR84aGTL624IERVdjlQUJELZ3qNRxb2SkyuTUOBWTRi-RT5rffA21GP-8LvKg=w72-h72-n-k-no-nu'/>
+<a href='https://thanhdz2017.blogspot.com/2018/01/huong-dan-tao-virus-ransomware-on-gian.html' target='_blank'>
+<img alt='' border='0' src='https://lh4.googleusercontent.com/proxy/5CL2xf-nRyMk6Txgql2pzlhqHvxEysJvAQGmLCNAnjYQgqURAM7F3Uo0ipw7STxVCNFwM3IvZfRAvMgNPAaerDhnplc=w72-h72-n-k-no-nu'/>
 </a>
 </div>
-<div class='item-title'><a href='https://thanhdz2017.blogspot.com/2018/01/song-chung-voi-me-vo-leg.html'>Sô&#769;ng Chung Vơ&#769;i Me&#803; Vơ&#803; - LEG</a></div>
-<div class='item-snippet'>  Mình không giữ tất cả những nội dung của video này.Mình chỉ chia sẻ lại video này trên blog của mình bằng cách nhúng   Link video gốc:&#160;htt...</div>
+<div class='item-title'><a href='https://thanhdz2017.blogspot.com/2018/01/huong-dan-tao-virus-ransomware-on-gian.html'>Hướng dẫn tạo virus Ransomware đơn giản bằng C#</a></div>
+<div class='item-snippet'>
+</div>
 </div>
 <div style='clear: both;'></div>
 </li>
@@ -1499,7 +1566,8 @@ Thông báo
 <a href='https://thanhdz2017.blogspot.com/'>Trang chủ</a>
 </li>
 <li>
-<a href='https://thanhdz2017.blogspot.com/p/blog-page_17.html'>(Trang Không có Tiêu đề)</a>
+<a href='https://thanhdz2017.blogspot.com/p/blog-page_17.html'>
+</a>
 </li>
 <li>
 <a href='https://thanhdz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html'>Các luồng trực tiếp trên YouTube</a>
@@ -2125,16 +2193,16 @@ Tất cả nhận xét
 <div id='BlogArchive2_ArchiveList'>
 <ul class='flat'>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2020/03/'>tháng ba 2020</a> (1)
+<a href='https://thanhdz2017.blogspot.com/2020/03/'>tháng ba 2020</a> (2)
       </li>
 <li class='archivedate'>
 <a href='https://thanhdz2017.blogspot.com/2018/03/'>tháng ba 2018</a> (1)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2018/02/'>tháng hai 2018</a> (1)
+<a href='https://thanhdz2017.blogspot.com/2018/02/'>tháng hai 2018</a> (2)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2018/01/'>tháng một 2018</a> (10)
+<a href='https://thanhdz2017.blogspot.com/2018/01/'>tháng một 2018</a> (9)
       </li>
 <li class='archivedate'>
 <a href='https://thanhdz2017.blogspot.com/2017/05/'>tháng năm 2017</a> (2)
@@ -2250,16 +2318,16 @@ Báo cáo Lạm dụng
 <div id='BlogArchive1_ArchiveList'>
 <ul class='flat'>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2020/03/'>tháng ba 2020</a> (1)
+<a href='https://thanhdz2017.blogspot.com/2020/03/'>tháng ba 2020</a> (2)
       </li>
 <li class='archivedate'>
 <a href='https://thanhdz2017.blogspot.com/2018/03/'>tháng ba 2018</a> (1)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2018/02/'>tháng hai 2018</a> (1)
+<a href='https://thanhdz2017.blogspot.com/2018/02/'>tháng hai 2018</a> (2)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2018/01/'>tháng một 2018</a> (10)
+<a href='https://thanhdz2017.blogspot.com/2018/01/'>tháng một 2018</a> (9)
       </li>
 <li class='archivedate'>
 <a href='https://thanhdz2017.blogspot.com/2017/05/'>tháng năm 2017</a> (2)
@@ -2438,7 +2506,7 @@ Hi vọng trong thời gian tới các bạn vẫn ủng hộ mình nhiệt tìn
 <!-- outside of the include in order to lock Attribution widget -->
 <div class='foot section' id='footer-3' name='Chân trang'><div class='widget Attribution' data-version='1' id='Attribution1'>
 <div class='widget-content' style='text-align: center;'>
-Copyright (C) 2018 Duy Thành. All right reserved.. Chủ đề Cửa sổ hình ảnh. Được tạo bởi <a href='https://www.blogger.com' target='_blank'>Blogger</a>.
+Copyright (C) 2018 Duy Thành. All right reserved.. Được tạo bởi <a href='https://www.blogger.com' target='_blank'>Blogger</a>.
 </div>
 <div class='clear'></div>
 <span class='widget-item-control'>
@@ -2476,8 +2544,8 @@ Copyright (C) 2018 Duy Thành. All right reserved.. Chủ đề Cửa sổ hình
 
 <script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/367476687-widgets.js"></script>
 <script type='text/javascript'>
-window['__wavt'] = 'AOuZoY4hvcTSlsvwHyOSfOyCJSm8R4fCyg:1583806669652';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7179935887427254041','//thanhdz2017.blogspot.com/','7179935887427254041');
-_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7179935887427254041', 'title': 'Duy Thành Vlogs - Học Tin học Online', 'url': 'https://thanhdz2017.blogspot.com/', 'canonicalUrl': 'https://thanhdz2017.blogspot.com/', 'homepageUrl': 'https://thanhdz2017.blogspot.com/', 'searchUrl': 'https://thanhdz2017.blogspot.com/search', 'canonicalHomepageUrl': 'https://thanhdz2017.blogspot.com/', 'blogspotFaviconUrl': 'https://thanhdz2017.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'vi', 'localeUnderscoreDelimited': 'vi', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - Atom\x22 href\x3d\x22https://thanhdz2017.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - RSS\x22 href\x3d\x22https://thanhdz2017.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7179935887427254041/posts/default\x22 /\x3e\n', 'meTag': '\x3clink rel\x3d\x22me\x22 href\x3d\x22https://www.blogger.com/profile/07247626638139993142\x22 /\x3e\n', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/1894580631-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/3940faea15179644', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Nhận liên kết', 'key': 'link', 'shareMessage': 'Nhận liên kết', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Chia sẻ với Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Chia sẻ với Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Chia sẻ với Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27vi\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Đọc thêm', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Duy Thành Vlogs - Học Tin học Online', 'metaDescription': 'Bạn muốn tìm gì?'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Chỉnh sửa', 'linkCopiedToClipboard': 'Đã sao chép đường liên kết vào khay nhớ tạm!', 'ok': 'Ok', 'postLink': 'Liên kết bài đăng'}}, {'name': 'template', 'data': {'name': 'Picture Window', 'localizedName': 'Cửa sổ hình ảnh', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': false, 'variant': 'open', 'variantId': 'open'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Duy Thành Vlogs - Học Tin học Online', 'description': 'Bạn muốn tìm gì?', 'url': 'https://thanhdz2017.blogspot.com/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
+window['__wavt'] = 'AOuZoY7YUCFLvJfjKXD4S0iz6lJmc60VTQ:1583897434251';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7179935887427254041','//thanhdz2017.blogspot.com/','7179935887427254041');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7179935887427254041', 'title': 'Duy Thành Vlogs - Học Tin học Online', 'url': 'https://thanhdz2017.blogspot.com/', 'canonicalUrl': 'https://thanhdz2017.blogspot.com/', 'homepageUrl': 'https://thanhdz2017.blogspot.com/', 'searchUrl': 'https://thanhdz2017.blogspot.com/search', 'canonicalHomepageUrl': 'https://thanhdz2017.blogspot.com/', 'blogspotFaviconUrl': 'https://thanhdz2017.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'vi', 'localeUnderscoreDelimited': 'vi', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - Atom\x22 href\x3d\x22https://thanhdz2017.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - RSS\x22 href\x3d\x22https://thanhdz2017.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7179935887427254041/posts/default\x22 /\x3e\n', 'meTag': '\x3clink rel\x3d\x22me\x22 href\x3d\x22https://www.blogger.com/profile/07247626638139993142\x22 /\x3e\n', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/1894580631-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/3940faea15179644', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Nhận liên kết', 'key': 'link', 'shareMessage': 'Nhận liên kết', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Chia sẻ với Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Chia sẻ với Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Chia sẻ với Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27vi\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Đọc thêm', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Duy Thành Vlogs - Học Tin học Online', 'metaDescription': 'Bạn muốn tìm gì?'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Chỉnh sửa', 'linkCopiedToClipboard': 'Đã sao chép đường liên kết vào khay nhớ tạm!', 'ok': 'Ok', 'postLink': 'Liên kết bài đăng'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Tùy chỉnh', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Duy Thành Vlogs - Học Tin học Online', 'description': 'Bạn muốn tìm gì?', 'url': 'https://thanhdz2017.blogspot.com/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
 _WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', document.getElementById('Navbar1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe3', 'crosscol', document.getElementById('Subscribe3'), {}, 'displayModeFull'));
@@ -2487,7 +2555,7 @@ _WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPost
 _WidgetManager._RegisterWidget('_WikipediaView', new _WidgetInfo('Wikipedia1', 'sidebar-right-1', document.getElementById('Wikipedia1'), {'title': 'Tìm bài viết trên Wikipedia', 'language': 'vi', 'noResultsFoundMsg': 'Không tìm thấy kết quả nào.', 'enterTextMsg': 'Vui lòng nhập văn bản để tìm kiếm.', 'moreMsg': 'Thêm &#187;', 'searchResultsMsg': 'Kết quả tìm kiếm', 'fetchingErrorMsg': 'Đã xảy ra lỗi. Ha&#771;y thử lại.'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_ContactFormView', new _WidgetInfo('ContactForm1', 'sidebar-right-1', document.getElementById('ContactForm1'), {'contactFormMessageSendingMsg': 'Đang gửi...', 'contactFormMessageSentMsg': 'Thư của bạn đã được gửi.', 'contactFormMessageNotSentMsg': 'Không thể gửi thư.&#160;Vui lòng&#160;thử lại sau.', 'contactFormInvalidEmailMsg': 'Cần nhập địa chỉ email hợp lệ.', 'contactFormEmptyMessageMsg': 'Trường thư không thể để trống.', 'title': 'Liên hệ', 'blogId': '7179935887427254041', 'contactFormNameMsg': 'Tên', 'contactFormEmailMsg': 'Email', 'contactFormMessageMsg': 'Thông báo', 'contactFormSendMsg': 'Gửi', 'submitUrl': 'https://www.blogger.com/contact-form.do'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_TranslateView', new _WidgetInfo('Translate1', 'sidebar-right-1', document.getElementById('Translate1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList5', 'sidebar-right-1', document.getElementById('PageList5'), {'title': 'Trang', 'links': [{'isCurrentPage': true, 'href': 'https://thanhdz2017.blogspot.com/', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/blog-page_17.html', 'id': '577920533394648147', 'title': '(Trang Không có Tiêu đề)'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html', 'id': '6424468355137672727', 'title': 'Các luồng trực tiếp trên YouTube'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/blog-page.html', 'id': '3984246270480502051', 'title': 'Theo dõi tôi trên YouTube:https://www.youtube.com/...'}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList5', 'sidebar-right-1', document.getElementById('PageList5'), {'title': 'Trang', 'links': [{'isCurrentPage': true, 'href': 'https://thanhdz2017.blogspot.com/', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/blog-page_17.html', 'id': '577920533394648147', 'title': ''}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html', 'id': '6424468355137672727', 'title': 'Các luồng trực tiếp trên YouTube'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/blog-page.html', 'id': '3984246270480502051', 'title': 'Theo dõi tôi trên YouTube:https://www.youtube.com/...'}], 'mobile': false}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts2', 'sidebar-right-1', document.getElementById('PopularPosts2'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'sidebar-right-1', document.getElementById('PageList1'), {'title': 'Tiện ích', 'links': [{'isCurrentPage': false, 'href': 'http://thanhduydz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html?m\x3d1', 'title': 'Các luồng trực tiếp video trên YouTube của tôi '}, {'isCurrentPage': true, 'href': 'https://thanhdz2017.blogspot.com/', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html', 'id': '6424468355137672727', 'title': 'Các luồng trực tiếp trên YouTube'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/blog-page.html', 'id': '3984246270480502051', 'title': 'Theo dõi tôi trên YouTube:https://www.youtube.com/...'}], 'mobile': false}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_TextView', new _WidgetInfo('Text2', 'sidebar-right-1', document.getElementById('Text2'), {}, 'displayModeFull'));
@@ -2513,7 +2581,7 @@ _WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch2',
 _WidgetManager._RegisterWidget('_ReportAbuseView', new _WidgetInfo('ReportAbuse1', 'sidebar-right-2-1', document.getElementById('ReportAbuse1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-3', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Đang tải\x26hellip;'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_FollowersView', new _WidgetInfo('Followers1', 'footer-1', document.getElementById('Followers1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_StatsView', new _WidgetInfo('Stats1', 'footer-1', document.getElementById('Stats1'), {'title': 'Tổng số lượt xem trang', 'showGraphicalCounter': false, 'showAnimatedCounter': false, 'showSparkline': true, 'statsUrl': '//thanhdz2017.blogspot.com/b/stats?style\x3dWHITE_TRANSPARENT\x26timeRange\x3dALL_TIME\x26token\x3dAPq4FmAcNeRmKALp9qT_xaEGEhf3US-oaMhDFwM_Wo_cRtqQ8MhtW_76W0FzQjwVVrVAlINnwzWCS6T56R0M4OcHFeflqDkrHQ'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_StatsView', new _WidgetInfo('Stats1', 'footer-1', document.getElementById('Stats1'), {'title': 'Tổng số lượt xem trang', 'showGraphicalCounter': false, 'showAnimatedCounter': false, 'showSparkline': true, 'statsUrl': '//thanhdz2017.blogspot.com/b/stats?style\x3dWHITE_TRANSPARENT\x26timeRange\x3dALL_TIME\x26token\x3dAPq4FmBYp2dP1NuLXuV6LyuPc9WqbsaFrH_WVarRgMjNL-qTv4E1mbgmTvuDTAP9vfiS5aY_lZ1CvE7tsXwlNv3-2CwUZPLVug'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header3', 'footer-1', document.getElementById('Header3'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'footer-2-1', document.getElementById('HTML2'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_BloggerButtonView', new _WidgetInfo('BloggerButton2', 'footer-2-2', document.getElementById('BloggerButton2'), {}, 'displayModeFull'));
