@@ -1143,7 +1143,7 @@ Không có nhận xét nào:
 <meta content='5602394280744738449' itemprop='postId'/>
 <a name='5602394280744738449'></a>
 <h3 class='post-title entry-title' itemprop='name'>
-<a href='https://thanhdz2017.blogspot.com/2018/02/thong-bao-chinh-thuc-mo-tro-lai-kenh.html'>Thông báo chính thức mở trở lại kênh YouTube</a>
+<a href='2018/02/thong-bao-mo-lai-kenh-youtube.html'>Thông báo chính thức mở trở lại kênh YouTube</a>
 </h3>
 <div class='post-header'>
 <div class='post-header-line-1'></div>
@@ -1692,7 +1692,7 @@ Thông báo
 <img alt='' border='0' src='https://lh6.googleusercontent.com/proxy/iLPp95ITeCLrulC-ufQLBqnCRPsNLiy-RnXLY64QYOjpjMjn8geF6JrKX_FR_Bl18o9Ybi9e1Ut3MQImg8IJJEmwS5k=w72-h72-n-k-no-nu'/>
 </a>
 </div>
-<div class='item-title'><a href='/2018/03/tao-virus-troll-ban-be-cai-lai-win.html''>Tạo virus để troll bạn bè, cài lại win</a></div>
+<div class='item-title'><a href='/2018/03/tao-virus-troll-ban-be-cai-lai-win.html'>Tạo virus để troll bạn bè, cài lại win</a></div>
 <div class='item-snippet'>
 </div>
 </div>
