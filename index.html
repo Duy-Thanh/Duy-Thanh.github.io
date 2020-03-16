@@ -912,7 +912,7 @@ Không có nhận xét nào:
 <div class='post-header-line-1'></div>
 </div>
 <div class='post-body entry-content' id='post-body-5206803677619888702' itemprop='articleBody'>
-<a href="/web_game.html">Web Game của tôi</a>
+<a href="2020/03/web_game.html">Web Game của tôi</a>
 <div style='clear: both;'></div>
 </div>
 <div class='post-footer'>
