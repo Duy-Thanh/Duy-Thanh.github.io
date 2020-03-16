@@ -906,7 +906,7 @@ Không có nhận xét nào:
 <meta content='5206803677619888702' itemprop='postId'/>
 <a name='5206803677619888702'></a>
 <h3 class='post-title entry-title' itemprop='name'>
-<a href='https://thanhdz2017.blogspot.com/2020/03/web-game.html'>Web Game</a>
+<a href='/2020/03/web_game.html'>Web Game</a>
 </h3>
 <div class='post-header'>
 <div class='post-header-line-1'></div>
