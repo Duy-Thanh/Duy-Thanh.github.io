@@ -14,16 +14,16 @@
 <meta content='width=1100' name='viewport'/>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
 <meta content='blogger' name='generator'/>
-<link href='https://thanhdz2017.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
-<link href='https://thanhdz2017.blogspot.com/' rel='canonical'/>
-<link rel="alternate" type="application/atom+xml" title="Duy Thành Vlogs - Học Tin học Online - Atom" href="https://thanhdz2017.blogspot.com/feeds/posts/default" />
-<link rel="alternate" type="application/rss+xml" title="Duy Thành Vlogs - Học Tin học Online - RSS" href="https://thanhdz2017.blogspot.com/feeds/posts/default?alt=rss" />
+<link href='https://duy-thanh.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://duy-thanh.github.io/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Duy Thành Vlogs - Học Tin học Online - Atom" href="https://duy-thanh.github.io/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Duy Thành Vlogs - Học Tin học Online - RSS" href="https://duy-thanh.github.io/feeds/posts/default?alt=rss" />
 <link rel="service.post" type="application/atom+xml" title="Duy Thành Vlogs - Học Tin học Online - Atom" href="https://www.blogger.com/feeds/7179935887427254041/posts/default" />
 <link rel="me" href="https://www.blogger.com/profile/07247626638139993142" />
 <!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/3095134620-ieretrofit.js"></script>
 <![endif]-->
 <meta content='Bạn muốn tìm gì?' name='description'/>
-<meta content='https://thanhdz2017.blogspot.com/' property='og:url'/>
+<meta content='https://duy-thanh.github.io/' property='og:url'/>
 <meta content='Duy Thành Vlogs - Học Tin học Online' property='og:title'/>
 <meta content='Bạn muốn tìm gì?' property='og:description'/>
 <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
@@ -557,7 +557,7 @@ margin-left: 32px;
       gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
         if (gapi.iframes && gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d7179935887427254041\x26blogName\x3dDuy+Th%C3%A0nh+Vlogs+-+H%E1%BB%8Dc+Tin+h%E1%BB%8Dc+Online\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://thanhdz2017.blogspot.com/search\x26blogLocale\x3dvi\x26v\x3d2\x26homepageUrl\x3dhttps://thanhdz2017.blogspot.com/\x26vt\x3d-2985272094103758293',
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d7179935887427254041\x26blogName\x3dDuy+Th%C3%A0nh+Vlogs+-+H%E1%BB%8Dc+Tin+h%E1%BB%8Dc+Online\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://duy-thanh.github.io/search\x26blogLocale\x3dvi\x26v\x3d2\x26homepageUrl\x3dhttps://duy-thanh.github.io/\x26vt\x3d-2985272094103758293',
               where: document.getElementById("navbar-iframe-container"),
               id: "navbar-iframe"
           });
@@ -671,13 +671,13 @@ Duy Thành Vlogs - Học Tin học Online
 Bài đăng
 </span>
 <div class='feed-reader-links'>
-<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-netvibes.png'/>
 </a>
-<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-yahoo.png'/>
 </a>
-<a class='feed-reader-link' href='https://thanhdz2017.blogspot.com/feeds/posts/default' target='_blank'>
+<a class='feed-reader-link' href='https://duy-thanh.github.io/feeds/posts/default' target='_blank'>
 <img align='absmiddle' class='feed-icon' src='https://resources.blogblog.com/img/icon_feed12.png'/>
                   Atom
                 </a>
@@ -707,13 +707,13 @@ Bài đăng
 Tất cả nhận xét
 </span>
 <div class='feed-reader-links'>
-<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-netvibes.png'/>
 </a>
-<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-yahoo.png'/>
 </a>
-<a class='feed-reader-link' href='https://thanhdz2017.blogspot.com/feeds/comments/default' target='_blank'>
+<a class='feed-reader-link' href='/feed/default.xml' target='_blank'>
 <img align='absmiddle' class='feed-icon' src='https://resources.blogblog.com/img/icon_feed12.png'/>
                   Atom
                 </a>
@@ -828,13 +828,13 @@ Tất cả nhận xét
 <meta content='3656804169733643752' itemprop='postId'/>
 <a name='3656804169733643752'></a>
 <h3 class='post-title entry-title' itemprop='name'>
-<a href='https://thanhdz2017.blogspot.com/2020/03/cach-cai-at-half-life-cs-16.html'>Cách cài đặt Half Life CS 1.6</a>
+<a href='/2020/03/cach-cai-at-half-life-cs-1-6.html'>Cách cài đặt Half Life CS 1.6</a>
 </h3>
 <div class='post-header'>
 <div class='post-header-line-1'></div>
 </div>
 <div class='post-body entry-content' id='post-body-3656804169733643752' itemprop='articleBody'>
-<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/2Zdi9h0kRBU" width="560"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vz43RL8eBww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div style='clear: both;'></div>
 </div>
 <div class='post-footer'>
@@ -850,24 +850,24 @@ Bởi
 </span>
 <span class='post-timestamp'>
 vào lúc
-<meta content='https://thanhdz2017.blogspot.com/2020/03/cach-cai-at-half-life-cs-16.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2020/03/cach-cai-at-half-life-cs-16.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2020-03-16T21:24:00+07:00'>tháng 3 16, 2020</abbr></a>
+<meta content='/2020/03/cach-cai-at-half-life-cs-1-6.html' itemprop='url'/>
+<a class='timestamp-link' href='/2020/03/cach-cai-at-half-life-cs-1-6.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2020-03-16T21:24:00+07:00'>tháng 3 16, 2020</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
 <td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
 <span class='reactions-label'>
 Phản ứng:</span>&#160;</td>
-<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://thanhdz2017.blogspot.com/2020/03/cach-cai-at-half-life-cs-16.html'></iframe></td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://duy-thanh.github.io/2020/03/cach-cai-at-half-life-cs-16.html'></iframe></td>
 </tr></table>
 </span>
 <span class='post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2020/03/cach-cai-at-half-life-cs-16.html#comment-form' onclick=''>
+<a class='comment-link' href='/2020/03/cach-cai-at-half-life-cs-1-6.html#comment-form' onclick=''>
 Không có nhận xét nào:
     </a>
 </span>
 <span class='post-backlinks post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2020/03/cach-cai-at-half-life-cs-16.html#links'>Các liên kết với bài này</a>
+<a class='comment-link' href='/2020/03/cach-cai-at-half-life-cs-1-6.html#links'>Các liên kết với bài này</a>
 </span>
 <span class='post-icons'>
 <span class='item-action'>
@@ -912,7 +912,7 @@ Không có nhận xét nào:
 <div class='post-header-line-1'></div>
 </div>
 <div class='post-body entry-content' id='post-body-5206803677619888702' itemprop='articleBody'>
-<a href="2020/03/web_game.html">Web Game của tôi</a>
+<a href="/2020/03/web_game.html">Web Game của tôi</a>
 <div style='clear: both;'></div>
 </div>
 <div class='post-footer'>
@@ -928,24 +928,24 @@ Bởi
 </span>
 <span class='post-timestamp'>
 vào lúc
-<meta content='https://thanhdz2017.blogspot.com/2020/03/web-game.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2020/03/web-game.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2020-03-11T10:30:00+07:00'>tháng 3 11, 2020</abbr></a>
+<meta content='/2020/03/web_game.html' itemprop='url'/>
+<a class='timestamp-link' href='/2020/03/web_game.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2020-03-11T10:30:00+07:00'>tháng 3 11, 2020</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
 <td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
 <span class='reactions-label'>
 Phản ứng:</span>&#160;</td>
-<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://thanhdz2017.blogspot.com/2020/03/web-game.html'></iframe></td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://duy-thanh.github.io/2020/03/web-game.html'></iframe></td>
 </tr></table>
 </span>
 <span class='post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2020/03/web-game.html#comment-form' onclick=''>
+<a class='comment-link' href='/2020/03/web_game.html#comment-form' onclick=''>
 Không có nhận xét nào:
     </a>
 </span>
 <span class='post-backlinks post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2020/03/web-game.html#links'>Các liên kết với bài này</a>
+<a class='comment-link' href='/2020/03/web_game.html#links'>Các liên kết với bài này</a>
 </span>
 <span class='post-icons'>
 <span class='item-action'>
@@ -985,7 +985,7 @@ Không có nhận xét nào:
 <meta content='2566928160655478431' itemprop='postId'/>
 <a name='2566928160655478431'></a>
 <h3 class='post-title entry-title' itemprop='name'>
-<a href='https://thanhdz2017.blogspot.com/2020/03/width854-height480-srchttpswww.html'>video</a>
+<a href='/2020/03/video.html'>video</a>
 </h3>
 <div class='post-header'>
 <div class='post-header-line-1'></div>
@@ -1007,24 +1007,24 @@ Bởi
 </span>
 <span class='post-timestamp'>
 vào lúc
-<meta content='https://thanhdz2017.blogspot.com/2020/03/width854-height480-srchttpswww.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2020/03/width854-height480-srchttpswww.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2020-03-10T09:04:00+07:00'>tháng 3 10, 2020</abbr></a>
+<meta content='/2020/03/video.html' itemprop='url'/>
+<a class='timestamp-link' href='/2020/03/video.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2020-03-10T09:04:00+07:00'>tháng 3 10, 2020</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
 <td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
 <span class='reactions-label'>
 Phản ứng:</span>&#160;</td>
-<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://thanhdz2017.blogspot.com/2020/03/width854-height480-srchttpswww.html'></iframe></td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://duy-thanh.github.io/2020/03/width854-height480-srchttpswww.html'></iframe></td>
 </tr></table>
 </span>
 <span class='post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2020/03/width854-height480-srchttpswww.html#comment-form' onclick=''>
+<a class='comment-link' href='/2020/03/video.html#comment-form' onclick=''>
 Không có nhận xét nào:
     </a>
 </span>
 <span class='post-backlinks post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2020/03/width854-height480-srchttpswww.html#links'>Các liên kết với bài này</a>
+<a class='comment-link' href='/2020/03/video.html#links'>Các liên kết với bài này</a>
 </span>
 <span class='post-icons'>
 <span class='item-action'>
@@ -1064,7 +1064,7 @@ Không có nhận xét nào:
 <meta content='3720248022479584758' itemprop='postId'/>
 <a name='3720248022479584758'></a>
 <h3 class='post-title entry-title' itemprop='name'>
-<a href=/2018/03/tao-virus-troll-ban-be-cai-lai-win.html'>Tạo virus để troll bạn bè, cài lại win</a>
+<a href='/2018/03/tao-virus-troll-ban-be-cai-lai-win.html'>Tạo virus để troll bạn bè, cài lại win</a>
 </h3>
 <div class='post-header'>
 <div class='post-header-line-1'></div>
@@ -1086,24 +1086,24 @@ Bởi
 </span>
 <span class='post-timestamp'>
 vào lúc
-<meta content='https://thanhdz2017.blogspot.com/2018/03/tao-virus-e-troll-ban-be-cai-lai-win.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/03/tao-virus-e-troll-ban-be-cai-lai-win.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-03-07T09:37:00+07:00'>tháng 3 07, 2018</abbr></a>
+<meta content='/2018/03/tao-virus-troll-ban-be-cai-lai-win.html' itemprop='url'/>
+<a class='timestamp-link' href='/2018/03/tao-virus-troll-ban-be-cai-lai-win.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-03-07T09:37:00+07:00'>tháng 3 07, 2018</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
 <td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
 <span class='reactions-label'>
 Phản ứng:</span>&#160;</td>
-<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://thanhdz2017.blogspot.com/2018/03/tao-virus-e-troll-ban-be-cai-lai-win.html'></iframe></td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#/2018/03/tao-virus-troll-ban-be-cai-lai-win.html'></iframe></td>
 </tr></table>
 </span>
 <span class='post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2018/03/tao-virus-e-troll-ban-be-cai-lai-win.html#comment-form' onclick=''>
+<a class='comment-link' href='/2018/03/tao-virus-troll-ban-be-cai-lai-win.html#comment-form' onclick=''>
 Không có nhận xét nào:
     </a>
 </span>
 <span class='post-backlinks post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2018/03/tao-virus-e-troll-ban-be-cai-lai-win.html#links'>Các liên kết với bài này</a>
+<a class='comment-link' href='/2018/03/tao-virus-troll-ban-be-cai-lai-win.html#links'>Các liên kết với bài này</a>
 </span>
 <span class='post-icons'>
 <span class='item-action'>
@@ -1173,16 +1173,16 @@ vào lúc
 <td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
 <span class='reactions-label'>
 Phản ứng:</span>&#160;</td>
-<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://thanhdz2017.blogspot.com/2018/02/thong-bao-chinh-thuc-mo-tro-lai-kenh.html'></iframe></td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#/2018/02/thong-bao-mo-lai-kenh-youtube.html'></iframe></td>
 </tr></table>
 </span>
 <span class='post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2018/02/thong-bao-chinh-thuc-mo-tro-lai-kenh.html#comment-form' onclick=''>
+<a class='comment-link' href='/2018/02/thong-bao-mo-lai-kenh-youtube.html#comment-form' onclick=''>
 Không có nhận xét nào:
     </a>
 </span>
 <span class='post-backlinks post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2018/02/thong-bao-chinh-thuc-mo-tro-lai-kenh.html#links'>Các liên kết với bài này</a>
+<a class='comment-link' href='/2018/02/thong-bao-mo-lai-kenh-youtube.html#links'>Các liên kết với bài này</a>
 </span>
 <span class='post-icons'>
 <span class='item-action'>
@@ -1245,23 +1245,23 @@ Bởi
 <span class='post-timestamp'>
 vào lúc
 <meta content='/2018/01/tao-ransomware-don-gian-bang-c.html' itemprop='url'/>
-<a class='timestamp-link' href='https://thanhdz2017.blogspot.com/2018/01/huong-dan-tao-virus-ransomware-on-gian.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-02-01T13:38:00+07:00'>tháng 2 01, 2018</abbr></a>
+<a class='timestamp-link' href='/2018/01/tao-ransomware-don-gian-bang-c.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2018-02-01T13:38:00+07:00'>tháng 2 01, 2018</abbr></a>
 </span>
 <span class='reaction-buttons'>
 <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
 <td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
 <span class='reactions-label'>
 Phản ứng:</span>&#160;</td>
-<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://thanhdz2017.blogspot.com/2018/01/huong-dan-tao-virus-ransomware-on-gian.html'></iframe></td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#/2018/01/tao-ransomware-don-gian-bang-c.html'></iframe></td>
 </tr></table>
 </span>
 <span class='post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2018/01/huong-dan-tao-virus-ransomware-on-gian.html#comment-form' onclick=''>
+<a class='comment-link' href='/2018/01/tao-ransomware-don-gian-bang-c.html#comment-form' onclick=''>
 Không có nhận xét nào:
     </a>
 </span>
 <span class='post-backlinks post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2018/01/huong-dan-tao-virus-ransomware-on-gian.html#links'>Các liên kết với bài này</a>
+<a class='comment-link' href='/2018/01/tao-ransomware-don-gian-bang-c.html#links'>Các liên kết với bài này</a>
 </span>
 <span class='post-icons'>
 <span class='item-action'>
@@ -1333,16 +1333,16 @@ vào lúc
 <td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
 <span class='reactions-label'>
 Phản ứng:</span>&#160;</td>
-<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#https://thanhdz2017.blogspot.com/2018/01/cach-cai-at-adobe-photoshop-cs6-va-test.html'></iframe></td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bvui+nh%E1%BB%99n,+th%C3%BA+v%E1%BB%8B,+h%E1%BA%A5p+d%E1%BA%ABn%5D&amp;textColor=%23999999#/2018/01/cai-dat-photoshop-cs6-va-test-thu.html'></iframe></td>
 </tr></table>
 </span>
 <span class='post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2018/01/cach-cai-at-adobe-photoshop-cs6-va-test.html#comment-form' onclick=''>
+<a class='comment-link' href='/2018/01/cai-dat-photoshop-cs6-va-test-thu.html#comment-form' onclick=''>
 Không có nhận xét nào:
     </a>
 </span>
 <span class='post-backlinks post-comment-link'>
-<a class='comment-link' href='https://thanhdz2017.blogspot.com/2018/01/cach-cai-at-adobe-photoshop-cs6-va-test.html#links'>Các liên kết với bài này</a>
+<a class='comment-link' href='/2018/01/cai-dat-photoshop-cs6-va-test-thu.html#links'>Các liên kết với bài này</a>
 </span>
 <span class='post-icons'>
 <span class='item-action'>
@@ -1380,7 +1380,7 @@ Không có nhận xét nào:
 <div class='blog-feeds'>
 <div class='feed-links'>
 Đăng ký:
-<a class='feed-link' href='https://thanhdz2017.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>Bài đăng (Atom)</a>
+<a class='feed-link' href='/feed/default.xml' target='_blank' type='application/atom+xml'>Bài đăng (Atom)</a>
 </div>
 </div>
 </div><div class='widget FeaturedPost' data-version='1' id='FeaturedPost1'>
@@ -1421,11 +1421,11 @@ Không có nhận xét nào:
 <li>
 <div class='item-content'>
 <div class='item-thumbnail'>
-<a href='2018/01/cach-download-va-cai-dat-lmht.html' target='_blank'>
+<a href='/2018/01/cach-download-va-cai-dat-lmht.html' target='_blank'>
 <img alt='' border='0' src='https://4.bp.blogspot.com/-K_3TE_7b3vA/WmGlE1eb4pI/AAAAAAAAAKc/9QCt_4c_KboRTG-YAr6uX5_pvQB6yQztACLcBGAs/w72-h72-p-k-no-nu/t%25E1%25BA%25A3i%2Bxu%25E1%25BB%2591ng.jpg'/>
 </a>
 </div>
-<div class='item-title'><a href='2018/01/cach-download-va-cai-dat-lmht.html'>Hướng dẫn cách download liên minh huyền thoại</a></div>
+<div class='item-title'><a href='/2018/01/cach-download-va-cai-dat-lmht.html'>Hướng dẫn cách download liên minh huyền thoại</a></div>
 <div class='item-snippet'>Hướng dẫn cách download liên minh huyền thoại   Hello, xin chào tất cả các bạn đã quay trở lại với kênh Vlogs của mình và blog của mình!   M...</div>
 </div>
 <div style='clear: both;'></div>
@@ -1918,10 +1918,10 @@ Duy Thành Vlogs
 Bài đăng
 </span>
 <div class='feed-reader-links'>
-<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-netvibes.png'/>
 </a>
-<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-yahoo.png'/>
 </a>
 <a class='feed-reader-link' href='/feed/default.xml' target='_blank'>
@@ -1954,10 +1954,10 @@ Bài đăng
 Tất cả nhận xét
 </span>
 <div class='feed-reader-links'>
-<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-netvibes.png'/>
 </a>
-<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-yahoo.png'/>
 </a>
 <a class='feed-reader-link' href='/feed/default.xml' target='_blank'>
@@ -2066,13 +2066,13 @@ Tất cả nhận xét
 Bài đăng
 </span>
 <div class='feed-reader-links'>
-<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-netvibes.png'/>
 </a>
-<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-yahoo.png'/>
 </a>
-<a class='feed-reader-link' href='https://thanhdz2017.blogspot.com/feeds/posts/default' target='_blank'>
+<a class='feed-reader-link' href='https://duy-thanh.github.io/feeds/posts/default' target='_blank'>
 <img align='absmiddle' class='feed-icon' src='https://resources.blogblog.com/img/icon_feed12.png'/>
                   Atom
                 </a>
@@ -2102,10 +2102,10 @@ Bài đăng
 Tất cả nhận xét
 </span>
 <div class='feed-reader-links'>
-<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-netvibes.png'/>
 </a>
-<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fthanhdz2017.blogspot.com%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
+<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=https%3A%2F%2Fduy-thanh.github.io%2Ffeeds%2Fcomments%2Fdefault' target='_blank'>
 <img src='https://resources.blogblog.com/img/widgets/subscribe-yahoo.png'/>
 </a>
 <a class='feed-reader-link' href='/feed/default.xml' target='_blank'>
@@ -2208,19 +2208,19 @@ Tất cả nhận xét
 <div id='BlogArchive2_ArchiveList'>
 <ul class='flat'>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2020/03/'>tháng ba 2020</a> (3)
+<a href='https://duy-thanh.github.io/2020/03/'>tháng ba 2020</a> (3)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2018/03/'>tháng ba 2018</a> (1)
+<a href='https://duy-thanh.github.io/2018/03/'>tháng ba 2018</a> (1)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2018/02/'>tháng hai 2018</a> (2)
+<a href='https://duy-thanh.github.io/2018/02/'>tháng hai 2018</a> (2)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2018/01/'>tháng một 2018</a> (9)
+<a href='https://duy-thanh.github.io/2018/01/'>tháng một 2018</a> (9)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2017/05/'>tháng năm 2017</a> (2)
+<a href='https://duy-thanh.github.io/2017/05/'>tháng năm 2017</a> (2)
       </li>
 </ul>
 </div>
@@ -2333,19 +2333,19 @@ Báo cáo Lạm dụng
 <div id='BlogArchive1_ArchiveList'>
 <ul class='flat'>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2020/03/'>tháng ba 2020</a> (3)
+<a href='/2020/03/'>tháng ba 2020</a> (3)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2018/03/'>tháng ba 2018</a> (1)
+<a href='/2018/03/'>tháng ba 2018</a> (1)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2018/02/'>tháng hai 2018</a> (2)
+<a href='/2018/02/'>tháng hai 2018</a> (2)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2018/01/'>tháng một 2018</a> (9)
+<a href='2018/01/'>tháng một 2018</a> (9)
       </li>
 <li class='archivedate'>
-<a href='https://thanhdz2017.blogspot.com/2017/05/'>tháng năm 2017</a> (2)
+<a href='2017/05/'>tháng năm 2017</a> (2)
       </li>
 </ul>
 </div>
@@ -2407,7 +2407,7 @@ Báo cáo Lạm dụng
               },
               'reset': function() {
                 window.followersIframe.close();
-                followersIframeOpen("https://www.blogger.com/followers.g?blogID\x3d7179935887427254041\x26colors\x3dCgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByMzMzMzMzMiByMzMzY2OTkqC3RyYW5zcGFyZW50MgcjODg4ODg4OgcjMzMzMzMzQgcjMzM2Njk5SgcjMDAwMDAwUgcjMzM2Njk5Wgt0cmFuc3BhcmVudA%3D%3D\x26pageSize\x3d21\x26origin\x3dhttps://thanhdz2017.blogspot.com/");
+                followersIframeOpen("https://www.blogger.com/followers.g?blogID\x3d7179935887427254041\x26colors\x3dCgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByMzMzMzMzMiByMzMzY2OTkqC3RyYW5zcGFyZW50MgcjODg4ODg4OgcjMzMzMzMzQgcjMzM2Njk5SgcjMDAwMDAwUgcjMzM2Njk5Wgt0cmFuc3BhcmVudA%3D%3D\x26pageSize\x3d21\x26origin\x3dhttps://duy-thanh.github.io/");
               },
               'open': function(url) {
                 window.followersIframe.close();
@@ -2420,7 +2420,7 @@ Báo cáo Lạm dụng
         }
       });
     }
-    followersIframeOpen("https://www.blogger.com/followers.g?blogID\x3d7179935887427254041\x26colors\x3dCgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByMzMzMzMzMiByMzMzY2OTkqC3RyYW5zcGFyZW50MgcjODg4ODg4OgcjMzMzMzMzQgcjMzM2Njk5SgcjMDAwMDAwUgcjMzM2Njk5Wgt0cmFuc3BhcmVudA%3D%3D\x26pageSize\x3d21\x26origin\x3dhttps://thanhdz2017.blogspot.com/");
+    followersIframeOpen("https://www.blogger.com/followers.g?blogID\x3d7179935887427254041\x26colors\x3dCgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByMzMzMzMzMiByMzMzY2OTkqC3RyYW5zcGFyZW50MgcjODg4ODg4OgcjMzMzMzMzQgcjMzM2Njk5SgcjMDAwMDAwUgcjMzM2Njk5Wgt0cmFuc3BhcmVudA%3D%3D\x26pageSize\x3d21\x26origin\x3dhttps://duy-thanh.github.io/");
   </script></div>
 </div>
 </div>
@@ -2484,7 +2484,7 @@ Kênh YouTube:https://www.youtube.com/channel/UCz-hcaiYx8n_gke4G6B1o4A
 
 Facebook:https://www.facebook.com/thanhvlogs
 
-Blogger:https://thanhdz2017.blogspot.com/
+Blogger:https://duy-thanh.github.io/
 
 Hi vọng trong thời gian tới các bạn vẫn ủng hộ mình nhiệt tình nhé!
 </div>
@@ -2559,8 +2559,8 @@ Copyright &copy 2018 Duy Thành. All right reserved.. Được tạo bởi <a hr
 
 <script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/367476687-widgets.js"></script>
 <script type='text/javascript'>
-window['__wavt'] = 'AOuZoY6mRUsQqTB4jvxwWVVsxiEKZ6zavQ:1584368672078';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7179935887427254041','//thanhdz2017.blogspot.com/','7179935887427254041');
-_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7179935887427254041', 'title': 'Duy Thành Vlogs - Học Tin học Online', 'url': 'https://thanhdz2017.blogspot.com/', 'canonicalUrl': 'https://thanhdz2017.blogspot.com/', 'homepageUrl': 'https://thanhdz2017.blogspot.com/', 'searchUrl': 'https://thanhdz2017.blogspot.com/search', 'canonicalHomepageUrl': 'https://thanhdz2017.blogspot.com/', 'blogspotFaviconUrl': 'https://thanhdz2017.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'vi', 'localeUnderscoreDelimited': 'vi', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - Atom\x22 href\x3d\x22https://thanhdz2017.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - RSS\x22 href\x3d\x22https://thanhdz2017.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7179935887427254041/posts/default\x22 /\x3e\n', 'meTag': '\x3clink rel\x3d\x22me\x22 href\x3d\x22https://www.blogger.com/profile/07247626638139993142\x22 /\x3e\n', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/3095134620-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/b2f43f46e9ab05c3', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Nhận liên kết', 'key': 'link', 'shareMessage': 'Nhận liên kết', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Chia sẻ với Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Chia sẻ với Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Chia sẻ với Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27vi\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Đọc thêm', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Duy Thành Vlogs - Học Tin học Online', 'metaDescription': 'Bạn muốn tìm gì?'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Chỉnh sửa', 'linkCopiedToClipboard': 'Đã sao chép đường liên kết vào khay nhớ tạm!', 'ok': 'Ok', 'postLink': 'Liên kết bài đăng'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Tùy chỉnh', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Duy Thành Vlogs - Học Tin học Online', 'description': 'Bạn muốn tìm gì?', 'url': 'https://thanhdz2017.blogspot.com/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
+window['__wavt'] = 'AOuZoY6mRUsQqTB4jvxwWVVsxiEKZ6zavQ:1584368672078';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7179935887427254041','//duy-thanh.github.io/','7179935887427254041');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7179935887427254041', 'title': 'Duy Thành Vlogs - Học Tin học Online', 'url': 'duy-thanh.github.io', 'canonicalUrl': 'duy-thanh.github.io/', 'homepageUrl': 'duy-thanh.github.io', 'searchUrl': '/search.html', 'canonicalHomepageUrl': 'https://duy-thanh.github.io/', 'blogspotFaviconUrl': 'https://duy-thanh.github.io/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'vi', 'localeUnderscoreDelimited': 'vi', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - Atom\x22 href\x3d\x22/feed/posts/default.xml\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - RSS\x22 href\x3d\x22/feed/posts/default.xml?altx3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Duy Thành Vlogs - Học Tin học Online - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7179935887427254041/posts/default\x22 /\x3e\n', 'meTag': '\x3clink rel\x3d\x22me\x22 href\x3d\x22https://www.blogger.com/profile/07247626638139993142\x22 /\x3e\n', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/3095134620-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/b2f43f46e9ab05c3', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Nhận liên kết', 'key': 'link', 'shareMessage': 'Nhận liên kết', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Chia sẻ với Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Chia sẻ với Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Chia sẻ với Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27vi\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Đọc thêm', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Duy Thành Vlogs - Học Tin học Online', 'metaDescription': 'Bạn muốn tìm gì?'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Chỉnh sửa', 'linkCopiedToClipboard': 'Đã sao chép đường liên kết vào khay nhớ tạm!', 'ok': 'Ok', 'postLink': 'Liên kết bài đăng'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Tùy chỉnh', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Duy Thành Vlogs - Học Tin học Online', 'description': 'Bạn muốn tìm gì?', 'url': 'duy-thanh.github.io', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
 _WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', document.getElementById('Navbar1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe3', 'crosscol', document.getElementById('Subscribe3'), {}, 'displayModeFull'));
@@ -2570,15 +2570,15 @@ _WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPost
 _WidgetManager._RegisterWidget('_WikipediaView', new _WidgetInfo('Wikipedia1', 'sidebar-right-1', document.getElementById('Wikipedia1'), {'title': 'Tìm bài viết trên Wikipedia', 'language': 'vi', 'noResultsFoundMsg': 'Không tìm thấy kết quả nào.', 'enterTextMsg': 'Vui lòng nhập văn bản để tìm kiếm.', 'moreMsg': 'Thêm &#187;', 'searchResultsMsg': 'Kết quả tìm kiếm', 'fetchingErrorMsg': 'Đã xảy ra lỗi. Ha&#771;y thử lại.'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_ContactFormView', new _WidgetInfo('ContactForm1', 'sidebar-right-1', document.getElementById('ContactForm1'), {'contactFormMessageSendingMsg': 'Đang gửi...', 'contactFormMessageSentMsg': 'Thư của bạn đã được gửi.', 'contactFormMessageNotSentMsg': 'Không thể gửi thư.&#160;Vui lòng&#160;thử lại sau.', 'contactFormInvalidEmailMsg': 'Cần nhập địa chỉ email hợp lệ.', 'contactFormEmptyMessageMsg': 'Trường thư không thể để trống.', 'title': 'Liên hệ', 'blogId': '7179935887427254041', 'contactFormNameMsg': 'Tên', 'contactFormEmailMsg': 'Email', 'contactFormMessageMsg': 'Thông báo', 'contactFormSendMsg': 'Gửi', 'submitUrl': 'https://www.blogger.com/contact-form.do'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_TranslateView', new _WidgetInfo('Translate1', 'sidebar-right-1', document.getElementById('Translate1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList5', 'sidebar-right-1', document.getElementById('PageList5'), {'title': 'Trang', 'links': [{'isCurrentPage': true, 'href': 'https://thanhdz2017.blogspot.com/', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/blog-page_17.html', 'id': '577920533394648147', 'title': ''}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html', 'id': '6424468355137672727', 'title': 'Các luồng trực tiếp trên YouTube'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/blog-page.html', 'id': '3984246270480502051', 'title': 'Theo dõi tôi trên YouTube:https://www.youtube.com/...'}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList5', 'sidebar-right-1', document.getElementById('PageList5'), {'title': 'Trang', 'links': [{'isCurrentPage': true, 'href': 'https://duy-thanh.github.io/', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'https://duy-thanh.github.io/p/blog-page_17.html', 'id': '577920533394648147', 'title': ''}, {'isCurrentPage': false, 'href': 'https://duy-thanh.github.io/p/cac-luong-truc-tiep-tren-youtube.html', 'id': '6424468355137672727', 'title': 'Các luồng trực tiếp trên YouTube'}, {'isCurrentPage': false, 'href': 'https://duy-thanh.github.io/p/blog-page.html', 'id': '3984246270480502051', 'title': 'Theo dõi tôi trên YouTube:https://www.youtube.com/...'}], 'mobile': false}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts2', 'sidebar-right-1', document.getElementById('PopularPosts2'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'sidebar-right-1', document.getElementById('PageList1'), {'title': 'Tiện ích', 'links': [{'isCurrentPage': false, 'href': 'http://thanhduydz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html?m\x3d1', 'title': 'Các luồng trực tiếp video trên YouTube của tôi '}, {'isCurrentPage': true, 'href': 'https://thanhdz2017.blogspot.com/', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html', 'id': '6424468355137672727', 'title': 'Các luồng trực tiếp trên YouTube'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/blog-page.html', 'id': '3984246270480502051', 'title': 'Theo dõi tôi trên YouTube:https://www.youtube.com/...'}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'sidebar-right-1', document.getElementById('PageList1'), {'title': 'Tiện ích', 'links': [{'isCurrentPage': false, 'href': 'http://thanhduydz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html?m\x3d1', 'title': 'Các luồng trực tiếp video trên YouTube của tôi '}, {'isCurrentPage': true, 'href': 'https://duy-thanh.github.io/', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'https://duy-thanh.github.io/p/cac-luong-truc-tiep-tren-youtube.html', 'id': '6424468355137672727', 'title': 'Các luồng trực tiếp trên YouTube'}, {'isCurrentPage': false, 'href': 'https://duy-thanh.github.io/p/blog-page.html', 'id': '3984246270480502051', 'title': 'Theo dõi tôi trên YouTube:https://www.youtube.com/...'}], 'mobile': false}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_TextView', new _WidgetInfo('Text2', 'sidebar-right-1', document.getElementById('Text2'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_BloggerButtonView', new _WidgetInfo('BloggerButton1', 'sidebar-right-1', document.getElementById('BloggerButton1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList4', 'sidebar-right-1', document.getElementById('PageList4'), {'title': 'Trang', 'links': [{'isCurrentPage': true, 'href': 'https://thanhdz2017.blogspot.com/', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html', 'id': '6424468355137672727', 'title': 'Các luồng trực tiếp trên YouTube'}, {'isCurrentPage': false, 'href': 'https://thanhdz2017.blogspot.com/p/blog-page.html', 'id': '3984246270480502051', 'title': 'Theo dõi tôi trên YouTube:https://www.youtube.com/...'}, {'isCurrentPage': false, 'href': 'http://thanhduydz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html?m\x3d1', 'title': 'Trực tiếp trên YouTube '}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList4', 'sidebar-right-1', document.getElementById('PageList4'), {'title': 'Trang', 'links': [{'isCurrentPage': true, 'href': 'duy-thanh.github.io', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'https://duy-thanh.github.io/p/cac-luong-truc-tiep-tren-youtube.html', 'id': '6424468355137672727', 'title': 'Các luồng trực tiếp trên YouTube'}, {'isCurrentPage': false, 'href': 'https://duy-thanh.github.io/p/blog-page.html', 'id': '3984246270480502051', 'title': 'Theo dõi tôi trên YouTube:https://www.youtube.com/...'}, {'isCurrentPage': false, 'href': 'http://thanhduydz2017.blogspot.com/p/cac-luong-truc-tiep-tren-youtube.html?m\x3d1', 'title': 'Trực tiếp trên YouTube '}], 'mobile': false}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'sidebar-right-1', document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_FollowByEmailView', new _WidgetInfo('FollowByEmail1', 'sidebar-right-1', document.getElementById('FollowByEmail1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList3', 'sidebar-right-1', document.getElementById('PageList3'), {'title': '', 'links': [{'isCurrentPage': false, 'href': 'http://thanhduydz2017.blogspot.com/cac-video-cua-toi/20171926.html', 'title': 'Các video của tôi '}, {'isCurrentPage': true, 'href': 'https://thanhdz2017.blogspot.com/', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'http://thanhduydz2017.blogspot.com/cac-luong-truc-tiep-tren-youtube-cua-toi/20171929.html', 'title': 'Các luồng trực tiếp trên YouTube của tôi '}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList3', 'sidebar-right-1', document.getElementById('PageList3'), {'title': '', 'links': [{'isCurrentPage': false, 'href': 'http://thanhduydz2017.blogspot.com/cac-video-cua-toi/20171926.html', 'title': 'Các video của tôi '}, {'isCurrentPage': true, 'href': 'https://duy-thanh.github.io/', 'title': 'Trang chủ'}, {'isCurrentPage': false, 'href': 'http://thanhduydz2017.blogspot.com/cac-luong-truc-tiep-tren-youtube-cua-toi/20171929.html', 'title': 'Các luồng trực tiếp trên YouTube của tôi '}], 'mobile': false}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header2', 'sidebar-right-1', document.getElementById('Header2'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar-right-1', document.getElementById('Profile1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe2', 'sidebar-right-1', document.getElementById('Subscribe2'), {}, 'displayModeFull'));
@@ -2588,7 +2588,7 @@ _WidgetManager._RegisterWidget('_FeedView', new _WidgetInfo('Feed1', 'sidebar-ri
 _WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe1', 'sidebar-right-1', document.getElementById('Subscribe1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_TextView', new _WidgetInfo('Text1', 'sidebar-right-1', document.getElementById('Text1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_FollowByEmailView', new _WidgetInfo('FollowByEmail2', 'sidebar-right-1', document.getElementById('FollowByEmail2'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList2', 'sidebar-right-1', document.getElementById('PageList2'), {'title': '', 'links': [{'isCurrentPage': true, 'href': 'https://thanhdz2017.blogspot.com/', 'title': 'Trang chủ'}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList2', 'sidebar-right-1', document.getElementById('PageList2'), {'title': '', 'links': [{'isCurrentPage': true, 'href': 'https://duy-thanh.github.io/', 'title': 'Trang chủ'}], 'mobile': false}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive2', 'sidebar-right-1', document.getElementById('BlogArchive2'), {'languageDirection': 'ltr', 'loadingMessage': 'Đang tải\x26hellip;'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch3', 'sidebar-right-1', document.getElementById('BlogSearch3'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar-right-1', document.getElementById('HTML1'), {}, 'displayModeFull'));
@@ -2596,7 +2596,7 @@ _WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch2',
 _WidgetManager._RegisterWidget('_ReportAbuseView', new _WidgetInfo('ReportAbuse1', 'sidebar-right-2-1', document.getElementById('ReportAbuse1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-3', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Đang tải\x26hellip;'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_FollowersView', new _WidgetInfo('Followers1', 'footer-1', document.getElementById('Followers1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_StatsView', new _WidgetInfo('Stats1', 'footer-1', document.getElementById('Stats1'), {'title': 'Tổng số lượt xem trang', 'showGraphicalCounter': false, 'showAnimatedCounter': false, 'showSparkline': true, 'statsUrl': '//thanhdz2017.blogspot.com/b/stats?style\x3dWHITE_TRANSPARENT\x26timeRange\x3dALL_TIME\x26token\x3dAPq4FmCaD6LLi_yeOHPMo-XFxOZx1Wvo96JUrS8Xbfqb8D5JatCTlw-7_um6_eLO6641BKEdPZ6MssRTLHCCvXP85kjWrzgFXw'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_StatsView', new _WidgetInfo('Stats1', 'footer-1', document.getElementById('Stats1'), {'title': 'Tổng số lượt xem trang', 'showGraphicalCounter': false, 'showAnimatedCounter': false, 'showSparkline': true, 'statsUrl': '//duy-thanh.github.io/b/stats?style\x3dWHITE_TRANSPARENT\x26timeRange\x3dALL_TIME\x26token\x3dAPq4FmCaD6LLi_yeOHPMo-XFxOZx1Wvo96JUrS8Xbfqb8D5JatCTlw-7_um6_eLO6641BKEdPZ6MssRTLHCCvXP85kjWrzgFXw'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header3', 'footer-1', document.getElementById('Header3'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'footer-2-1', document.getElementById('HTML2'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_BloggerButtonView', new _WidgetInfo('BloggerButton2', 'footer-2-2', document.getElementById('BloggerButton2'), {}, 'displayModeFull'));
