@@ -557,7 +557,7 @@ margin-left: 32px;
       gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
         if (gapi.iframes && gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d7179935887427254041\x26blogName\x3dDuy+Th%C3%A0nh+Vlogs+-+H%E1%BB%8Dc+Tin+h%E1%BB%8Dc+Online\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://duy-thanh.github.io/search\x26blogLocale\x3dvi\x26v\x3d2\x26homepageUrl\x3dhttps://duy-thanh.github.io/\x26vt\x3d-2985272094103758293',
+			url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d7179935887427254041\x26blogName\x3dDuy+Th%C3%A0nh+Vlogs+-+H%E1%BB%8Dc+Tin+h%E1%BB%8Dc+Online\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://thaanhdz2017.blogspot.com/search\x26blogLocale\x3dvi\x26v\x3d2\x26homepageUrl\x3dhttps://thaanhdz2017.blogspot.com\x26vt\x3d-2985272094103758293',
               where: document.getElementById("navbar-iframe-container"),
               id: "navbar-iframe"
           });
