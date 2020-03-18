@@ -816,7 +816,7 @@ Tất cả nhận xét
 <meta content='3656804169733643752' itemprop='postId'/>
 <a name='3656804169733643752'></a>
 <h3 class='post-title entry-title' itemprop='name'>
-<a href='/2020/03/cach-cai-at-half-life-cs-1-6.html'>Cách cài đặt Half Life CS 1.6</a>
+<a href='/2020/03/cach-cai-dat-half-life-cs-1-6.html'>Cách cài đặt Half Life CS 1.6</a>
 </h3>
 <div class='post-header'>
 <div class='post-header-line-1'></div>
