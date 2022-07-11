@@ -1,0 +1,66 @@
+body {
+    background-color: aqua;
+}
+
+* {
+    position: relative;
+}
+
+textarea:focus::placeholder {
+    color: white;
+}
+
+#mainDiv {
+    margin-top: 150px;
+}
+
+#encode, #decode {
+    width: 100px;
+    height: 40px;
+    background-color: #71DC1B;
+    border: none;
+    display: inline;
+    margin: 15px;
+}
+
+#btnEncrypt {
+    margin-top: 50px;
+}
+
+#encodeDiv, #decodeDiv {
+    margin-top: 20px;
+    opacity: 0;
+    display: inline;
+}
+
+#txtEncrypt, #txtDecrypt {
+    width: 300px;
+    height: 180px;
+    border: blue;
+}
+
+#resultEncrypt, #resultDecrypt {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid;
+    margin-top: 10px;
+    display: none;
+}
+
+#btnEncrypt, #btnDecrypt {
+    background-color: #F7DC1B;
+    width: 100px;
+    height: 30px;
+    border: navy;
+    margin-top: 10px;
+    display: inline;
+}
+
+#encodeBack, #decodeBack {
+    font-size: 20px;
+    height: 20px;
+    font-style: bold;
+    background-color: transparent;
+    border: none;
+}
