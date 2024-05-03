@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term of Service Notice</title>
+</head>
+<body>
+    <div id="startup" style="display: flex; flex-direction: column; text-align: center; align-items: center; justify-content: center; position: relative; top: 50%; transform: translateY(45vh);">
+        <p>We recently update our Term of Service. To continue using the website, you must agree Term of Service.</p>
+        <div style="display: flex; text-align: center; align-items: center; justify-content: center; position: relative; transform: translateY(4vh);">
+            <button onclick="openInScreen();">I agree</button>
+            <div style="padding-left: 20px;"></div>
+            <button onclick="userDontAgree();">I don't agree</button>
+        </div>
+    </div>
+    <div id="vid" style="display: none;">
+        <video id="video" width="100%" height="100%" autoplay muted>
+            <source src="/assets/asset2.mp4" type="video/mp4">
+        </video>    
+    </div>
+    <script>
+        var elem = document.getElementById("vid");
+        var video_element = document.getElementById("video");
+        var elem_startup = document.getElementById("startup");
+
+        function fullScreen() {
+            if (document.fullscreenElement) {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            } else {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) {
+                    elem.msRequestFullscreen();
+                }
+            }
+        }
+
+        function handleESCKey() {
+            document.addEventListener('keydown', function(e) {
+                // Check if the video element is in fullscreen mode
+                var isFullScreen = document.fullscreenElement === video_element;
+                if (e.key == "Escape" || e.key == "F11") {
+                    // If the video is in fullscreen mode, do not exit fullscreen mode
+                    e.preventDefault();
+                }
+            });
+        }
+
+        function openInScreen() {
+            elem.style.display = "block";
+            elem_startup.style.display = "none";
+
+            fullScreen();
+            video_element.pause();
+            video_element.currentTime = 0;
+            video_element.muted = !video_element.muted;
+            video_element.play();
+        }
+        
+        function userDontAgree() {
+            alert("Bruh, you don't agree with our new Term of Service. So, let's watch some video :)))");
+            openInScreen();
+        }
+    </script>
+</body>
+</html>
