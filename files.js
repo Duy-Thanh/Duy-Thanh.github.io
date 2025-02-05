@@ -19,67 +19,63 @@ function checkAuthStatus(callback) {
         return;
     }
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", root_url + "/api/check-auth?t=" + new Date().getTime(), true);
-    xhr.withCredentials = true;
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                try {
-                    var response = JSON.parse(xhr.responseText);
-                    console.log('Auth check response:', response);
-                    var userStatus = document.getElementById("userStatus");
-                    var uploadSection = document.getElementById("uploadSection");
-                    
-                    if (response.isAuthenticated === true) {
-                        userStatus.textContent = "Administrator";
-                        if (uploadSection) {
-                            uploadSection.style.display = "block";
-                        }
-                        if (callback) callback();
-                    } else if (response.isGuest === true) {
-                        userStatus.textContent = "Guest User";
-                        if (uploadSection) {
-                            uploadSection.style.display = "none";
-                        }
-                        if (callback) callback();
-                    } else {
-                        // Show modal instead of immediate redirect
-                        var modal = document.getElementById("authModal");
-                        if (modal) {
-                            modal.style.display = "flex";
-                        }
-                    }
-                } catch (e) {
-                    console.error('Error parsing auth response:', e);
-                }
-            } else {
-                // Handle error case
-                var fileList = document.getElementById("fileList");
-                if (fileList) {
-                    fileList.innerHTML = '<div class="loading">Error checking access. Please try again.</div>';
-                }
+    fetch(`${root_url}/api/check-auth?t=${Date.now()}`, {
+        method: 'GET',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Auth check response:', data);
+        var userStatus = document.getElementById("userStatus");
+        var uploadSection = document.getElementById("uploadSection");
+        
+        if (data.isAuthenticated === true) {
+            userStatus.textContent = "Administrator";
+            if (uploadSection) {
+                uploadSection.style.display = "block";
+            }
+            if (callback) callback(data);
+        } else if (data.isGuest === true) {
+            userStatus.textContent = "Guest User";
+            if (uploadSection) {
+                uploadSection.style.display = "none";
+            }
+            if (callback) callback(data);
+        } else {
+            // Show modal instead of immediate redirect
+            var modal = document.getElementById("authModal");
+            if (modal) {
+                modal.style.display = "flex";
             }
         }
-    };
-    xhr.send();
+    })
+    .catch(error => {
+        console.error('Auth check error:', error);
+    });
 }
 
 // Add guest continuation function
 function continueAsGuest() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", root_url + "/api/guest", true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-    
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
+    fetch(`${root_url}/api/guest`, {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Guest login response:', data);
+        if (data.success) {
             location.reload();
         }
-    };
-    
-    xhr.send(JSON.stringify({}));
+    })
+    .catch(error => {
+        console.error('Guest login error:', error);
+    });
 }
 
 function loadFiles() {
