@@ -1,1 +1,831 @@
-function getQueryParams(){var e=window.location.search,t={};"?"===e.charAt(0)&&(e=e.substring(1));for(var n=e.split("&"),o=0;o<n.length;o++){var a=n[o].split("=");t[decodeURIComponent(a[0])]=decodeURIComponent(a[1]||"")}return t}function checkAuthStatus(){var e=new XMLHttpRequest;e.open("GET",root_url+"/api/check-auth",!0),e.onreadystatechange=function(){if(4===e.readyState&&200===e.status){var t=JSON.parse(e.responseText),n=document.getElementById("userStatus"),o=document.getElementById("postSection"),a=document.getElementById("loginBtn"),i=document.getElementById("logoutBtn");!0===t.isAuthenticated?(n.textContent="Administrator",o&&(o.style.display="block"),a&&(a.style.display="none"),i&&(i.style.display="inline-block"),loadPosts()):(n.textContent="",o&&(o.style.display="none"),a&&(a.style.display="inline-block",a.onclick=function(){window.location.href="/login.html?redirect=blog"}),i&&(i.style.display="none"),loadPosts())}},e.send()}function loadPosts(){var e=new XMLHttpRequest;e.open("GET",root_url+"/api/posts",!0),e.onreadystatechange=function(){4===e.readyState&&200===e.status&&displayPosts(JSON.parse(e.responseText))},e.send()}function displayPosts(e){var t=document.getElementById("postList");t.innerHTML="";for(var n=0;n<e.length;n++){var o=e[n],a=document.createElement("div");a.className="post-item";var i=document.createElement("h3");i.className="post-title",i.textContent=o.title;var r=document.createElement("div");r.className="post-preview";var l=document.createElement("div");l.innerHTML=o.content;var d=l.textContent||l.innerText;(d=d.replace(/\s+/g," ").replace(/\n+/g," ").trim()).length>200&&(d=d.substring(0,200)+"..."),r.textContent=d;var c=document.createElement("div");c.className="post-meta",c.innerHTML="Posted: "+formatDateTime(o.created)+(o.modified&&o.modified!==o.created?"<br>Last Modified: "+formatDateTime(o.modified):"");var s=document.createElement("a");s.href="/post.html?id="+o.id,s.className="read-more-btn",s.textContent="Read More",a.appendChild(i),a.appendChild(r),a.appendChild(c),a.appendChild(s),t.appendChild(a)}}function formatDateTime(e){var t=new Date(e);return t.toLocaleDateString()+" "+t.toLocaleTimeString()}function editPost(e){window.location.href="/blog.html?action=edit&id="+e.id}function deletePost(e){var t=new XMLHttpRequest;t.open("DELETE",root_url+"/api/posts/"+e,!0),t.onload=function(){200===t.status?loadPosts():alert("Delete failed: "+t.statusText)},t.send()}function logout(){var e=new XMLHttpRequest;e.open("POST",root_url+"/api/logout",!0),e.onreadystatechange=function(){4===e.readyState&&(200===e.status?(document.cookie="",window.location.href="/"):alert("Logout failed: "+e.statusText))},e.send()}function loadPostForEdit(e){var t=new XMLHttpRequest;t.open("GET",root_url+"/api/posts/"+e,!0),t.onreadystatechange=function(){if(4===t.readyState&&200===t.status)try{var n=JSON.parse(t.responseText);document.getElementById("titleInput").value=n.title;var o=document.getElementById("contentInput");o.innerHTML=n.content;var a=document.getElementById("editorTitle");if(a&&(a.textContent="Edit Post"),"undefined"!=typeof Prism)for(var i=o.querySelectorAll("pre code"),r=0;r<i.length;r++)Prism.highlightElement(i[r]);var l=document.getElementById("postSection");l&&(l.style.display="block");var d=document.getElementById("postForm");d&&(d.onsubmit=function(t){t.preventDefault(),updatePost(e)})}catch(e){console.error("Error parsing post data:",e),alert("Error loading post data")}else 4===t.readyState&&(console.error("Failed to load post:",t.statusText),alert("Failed to load post for editing"))},t.onerror=function(){console.error("Network error occurred"),alert("Network error occurred while loading post")},t.send()}function updatePost(e){var t=document.getElementById("titleInput").value.trim(),n=document.getElementById("contentInput").innerHTML;if(n=cleanupContent(n),t&&n){var o=new XMLHttpRequest;o.open("PUT",root_url+"/api/posts/"+e,!0),o.setRequestHeader("Content-Type","application/json"),o.onload=function(){200===o.status?window.location.href="/blog.html":(console.error("Server response:",o.responseText),alert("Update failed: "+o.statusText))},o.onerror=function(){console.error("Network error occurred"),alert("Network error occurred")},o.send(JSON.stringify({title:t,content:n}))}else alert("Please fill in both title and content")}function formatText(e){document.execCommand(e,!1,null)}function submitPost(e){e.preventDefault();var t=document.getElementById("titleInput").value.trim(),n=document.getElementById("contentInput"),o=n?n.innerHTML.trim():"";if(console.log("Title:",t),console.log("Content:",o),t&&o){var a=new XMLHttpRequest;a.open("POST",root_url+"/api/posts",!0),a.setRequestHeader("Content-Type","application/json");var i={title:t,content:o};console.log("Sending post data:",i),a.onload=function(){200===a.status?window.location.href="/blog.html":(console.error("Server response:",a.responseText),alert("Post failed: "+a.statusText))},a.send(JSON.stringify(i))}else alert("Please fill in both title and content")}function insertCode(){var e=window.getSelection().getRangeAt(0),t=e.toString();if(t){var n=document.createElement("div");n.className="code-language-modal",n.innerHTML='<div class="modal-content"><h4>Select Programming Language</h4><select class="language-select"><option value="">Select language...</option><option value="javascript">JavaScript</option><option value="python">Python</option><option value="java">Java</option><option value="cpp">C++</option><option value="csharp">C#</option><option value="php">PHP</option><option value="ruby">Ruby</option><option value="html">HTML</option><option value="css">CSS</option><option value="sql">SQL</option></select><div class="modal-buttons"><button class="ok-btn">OK</button><button class="cancel-btn">Cancel</button></div></div>',document.body.appendChild(n);var o=n.querySelector(".language-select");n.querySelector(".ok-btn").onclick=function(){var a=o.value;if(a){var i=document.createElement("pre");i.className="line-numbers";var r=document.createElement("code");r.className="language-"+a;var l=t.replace(/\r\n/g,"\n").replace(/\n/g,"\n").replace(/\t/g,"    ");r.textContent=l,i.appendChild(r),e.deleteContents(),e.insertNode(i);var d=document.createElement("br");i.parentNode.insertBefore(d,i.nextSibling),Prism.highlightElement(r),document.body.removeChild(n)}else alert("Please select a language")},n.querySelector(".cancel-btn").onclick=function(){document.body.removeChild(n)}}else alert("Please select some text first")}function insertImage(){const e=prompt("Enter image URL:");if(!e)return;const t=document.createElement("img");t.src=e,t.alt="Image";document.getElementById("contentInput");window.getSelection().getRangeAt(0).insertNode(t)}function insertVideo(){var e=prompt("Enter video URL (YouTube or direct video file):");if(e){var t;if(e.includes("youtube.com")||e.includes("youtu.be")){var n=e.split("v=")[1]||e.split("/").pop();(t=document.createElement("iframe")).src="https://www.youtube.com/embed/"+n,t.width="560",t.height="315",t.frameBorder="0",t.allowFullscreen=!0}else(t=document.createElement("video")).src=e,t.controls=!0,t.width="560";window.getSelection().getRangeAt(0).insertNode(t)}}function insertAudio(){const e=prompt("Enter audio URL:");if(!e)return;const t=document.createElement("audio");t.src=e,t.controls=!0;window.getSelection().getRangeAt(0).insertNode(t)}window.NodeList&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=Array.prototype.forEach),window.onload=function(){checkAuthStatus();var e=getQueryParams(),t=e.action,n=e.id;if("edit"===t&&n){loadPostForEdit(n);var o=document.querySelector(".posts-section");o&&(o.style.display="none")}else loadPosts()};var currentMediaType="image";function openFileModal(e){currentMediaType=e,document.getElementById("fileModal").style.display="flex";var t=document.getElementById("mediaFileInput");if(t)switch(e){case"image":t.accept="image/*";break;case"video":t.accept="video/*";break;case"audio":t.accept="audio/*"}updateModalTitle(),setTimeout((function(){loadMediaFiles()}),100)}function closeFileModal(){var e=document.getElementById("fileModal");if(e){e.style.display="none";var t=document.getElementById("mediaFileList");t&&(t.innerHTML="")}}function loadMediaFiles(){var e=new XMLHttpRequest;e.open("GET",root_url+"/api/files",!0),e.onload=function(){if(200===e.status)try{displayMediaFiles(JSON.parse(e.responseText))}catch(e){console.error("Error parsing files:",e),document.getElementById("mediaFileList").innerHTML="Error loading files"}else document.getElementById("mediaFileList").innerHTML="Error loading files"},e.onerror=function(){document.getElementById("mediaFileList").innerHTML="Error loading files"},e.send()}function displayMediaFiles(e){var t=document.getElementById("mediaFileList");t&&(t.innerHTML='<div class="loading">Loading '+currentMediaType+" files...</div>",e=e.filter((function(e){if(0!==e.name.indexOf("blog_media_"))return!1;switch(currentMediaType){case"image":return e.name.match(/\.(jpg|jpeg|png|gif|ico|bmp|webp)$/i);case"video":return e.name.match(/\.(mp4|webm|ogg|mov|avi)$/i);case"audio":return e.name.match(/\.(mp3|wav|ogg|m4a)$/i);default:return!1}})),t.innerHTML="",0!==e.length?e.forEach((function(e){var n=document.createElement("div");n.className="media-item";var o=document.createElement("div");if(o.className="media-preview-container","image"===currentMediaType){var a=document.createElement("img");a.src=root_url+"/api/files/download/"+e.name,a.className="media-preview",a.alt=e.name.replace("blog_media_",""),o.appendChild(a)}else if("video"===currentMediaType){var i=document.createElement("video");i.src=root_url+"/api/files/download/"+e.name,i.className="media-preview",o.appendChild(i)}else if("audio"===currentMediaType){var r=document.createElement("i");r.className="fas fa-music media-preview-icon",o.appendChild(r)}var l=document.createElement("div");l.className="media-name",l.textContent=e.name.replace("blog_media_",""),n.appendChild(o),n.appendChild(l),n.addEventListener("click",(function(){insertMediaFile(e)})),t.appendChild(n)})):t.innerHTML='<div class="no-files">No '+currentMediaType+" files found</div>")}function insertMediaFile(e){var t=document.getElementById("contentInput");if(t){var n=null,o=root_url+"/api/files/download/"+e.name;if(e.name.match(/\.(jpg|jpeg|png|gif|ico|bmp|webp)$/i)?((n=document.createElement("img")).src=o,n.alt=e.name.replace("blog_media_",""),n.className="media-content"):e.name.match(/\.(mp4|webm|ogg|mov|avi)$/i)?((n=document.createElement("video")).src=o,n.controls=!0,n.className="media-content"):e.name.match(/\.(mp3|wav|ogg|m4a)$/i)&&((n=document.createElement("audio")).src=o,n.controls=!0,n.className="media-content"),!n)return console.error("Could not create element for file:",e),void alert("Unsupported file type. Please use image, video, or audio files.");var a,i=window.getSelection();try{a=i.getRangeAt(0)}catch(e){(a=document.createRange()).selectNodeContents(t),a.collapse(!1),i.removeAllRanges(),i.addRange(a)}n instanceof HTMLImageElement?(n.onload=r,n.onerror=function(){console.error("Failed to load image:",o),alert("Failed to load image file")}):n instanceof HTMLVideoElement?(n.onloadedmetadata=r,n.onerror=function(){console.error("Failed to load video:",o),alert("Failed to load video file")}):r()}function r(){a.insertNode(n);var e=document.createElement("br");(a=document.createRange()).setStartAfter(n),a.collapse(!0),a.insertNode(e),a.setStartAfter(e),a.collapse(!0),i.removeAllRanges(),i.addRange(a),closeFileModal()}}function updateModalTitle(){var e=document.querySelector(".modal-header h3");e&&(e.textContent=currentMediaType.charAt(0).toUpperCase()+currentMediaType.slice(1)+" Files")}function cleanupContent(e){var t=document.createElement("div");return t.innerHTML=e,t.querySelectorAll("pre code").forEach((function(e){e.className.includes("language-")||(e.className="language-plaintext"),e.textContent=e.textContent.replace(/\u200B/g,"").replace(/\u00A0/g," ")})),t.querySelectorAll("pre").forEach((function(e){e.className.includes("line-numbers")||(e.className="line-numbers")})),t.innerHTML}document.addEventListener("DOMContentLoaded",(function(){var e=document.getElementById("mediaFileInput");e&&(e.onchange=function(e){var t=e.target.files[0]?e.target.files[0].name:"No file chosen";document.querySelector(".file-name-display").textContent=t});var t=document.getElementById("mediaUploadForm");t&&(t.onsubmit=function(e){e.preventDefault();var t=document.getElementById("mediaFileInput");if(t.files[0]){var n=new FormData;n.append("file",t.files[0]);var o=new XMLHttpRequest;o.open("POST",root_url+"/api/blog-media/upload",!0),o.onload=function(){if(200===o.status){var e=JSON.parse(o.responseText);e.success?(t.value="",document.querySelector(".file-name-display").textContent="No file chosen",insertMediaFile({name:e.filename}),loadMediaFiles()):alert("Upload failed: "+(e.message||"Unknown error"))}else alert("Upload failed: "+o.statusText)},o.onerror=function(){alert("Upload failed: Network Error")},o.send(n)}else alert("Please select a file first")})})),document.addEventListener("DOMContentLoaded",(function(){var e=document.getElementById("contentInput");e&&(e.addEventListener("input",(function(){for(var e=this.querySelectorAll("pre code"),t=0;t<e.length;t++)Prism.highlightElement(e[t])})),e.addEventListener("paste",(function(e){var t;if(e.preventDefault(),t=window.clipboardData&&window.clipboardData.getData?window.clipboardData.getData("Text"):e.clipboardData&&e.clipboardData.getData?e.clipboardData.getData("text/plain"):"",document.selection)(n=document.selection.createRange()).text=t;else if(window.getSelection){var n;(n=window.getSelection().getRangeAt(0)).deleteContents(),n.insertNode(document.createTextNode(t))}})))}));
+// Polyfill for forEach on NodeList for IE11
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
+// Utility function to get query parameters
+function getQueryParams() {
+    var search = window.location.search;
+    var params = {};
+    
+    if (search.charAt(0) === '?') {
+        search = search.substring(1);
+    }
+    
+    var pairs = search.split('&');
+    for (var i = 0; i < pairs.length; i++) {
+        var pair = pairs[i].split('=');
+        params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+    }
+    
+    return params;
+}
+
+// Initialize when the page loads
+window.onload = function() {
+    checkAuthStatus();
+    
+    // Check if we're editing a post
+    var params = getQueryParams();
+    var action = params['action'];
+    var postId = params['id'];
+    
+    if (action === 'edit' && postId) {
+        loadPostForEdit(postId);
+        // Hide the posts section
+        var postsSection = document.querySelector('.posts-section');
+        if (postsSection) {
+            postsSection.style.display = 'none';
+        }
+    } else {
+        // Normal post list view
+        loadPosts();
+    }
+};
+
+function checkAuthStatus() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", root_url + "/api/check-auth", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var response = JSON.parse(xhr.responseText);
+            var userStatus = document.getElementById("userStatus");
+            var postSection = document.getElementById("postSection");
+            var loginBtn = document.getElementById("loginBtn");
+            var logoutBtn = document.getElementById("logoutBtn");
+            
+            if (response.isAuthenticated === true) {
+                userStatus.textContent = "Administrator";
+                if (postSection) postSection.style.display = "block";
+                if (loginBtn) loginBtn.style.display = "none";
+                if (logoutBtn) logoutBtn.style.display = "inline-block";
+                
+                // Refresh the posts to show admin controls
+                loadPosts();
+            } else {
+                userStatus.textContent = "";
+                if (postSection) postSection.style.display = "none";
+                if (loginBtn) {
+                    loginBtn.style.display = "inline-block";
+                    loginBtn.onclick = function() {
+                        window.location.href = '/login.html?redirect=blog';
+                    };
+                }
+                if (logoutBtn) logoutBtn.style.display = "none";
+                
+                // Refresh the posts without admin controls
+                loadPosts();
+            }
+        }
+    };
+    xhr.send();
+}
+
+function loadPosts() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", root_url + "/api/posts", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var posts = JSON.parse(xhr.responseText);
+            displayPosts(posts);
+        }
+    };
+    xhr.send();
+}
+
+function displayPosts(posts) {
+    var postList = document.getElementById("postList");
+    postList.innerHTML = "";
+
+    for (var i = 0; i < posts.length; i++) {
+        var post = posts[i];
+        var postDiv = document.createElement("div");
+        postDiv.className = "post-item";
+        
+        var title = document.createElement("h3");
+        title.className = "post-title";
+        title.textContent = post.title;
+        
+        var preview = document.createElement("div");
+        preview.className = "post-preview";
+        
+        // Create a temporary div to handle HTML content
+        var tempDiv = document.createElement('div');
+        tempDiv.innerHTML = post.content;
+        
+        // Convert line breaks to spaces and normalize whitespace
+        var previewText = tempDiv.textContent || tempDiv.innerText;
+        previewText = previewText
+            .replace(/\s+/g, ' ')  // Replace multiple spaces/breaks with single space
+            .replace(/\n+/g, ' ')  // Replace line breaks with space
+            .trim();               // Remove leading/trailing whitespace
+            
+        if (previewText.length > 200) {
+            previewText = previewText.substring(0, 200) + "...";
+        }
+        preview.textContent = previewText;
+        
+        var meta = document.createElement("div");
+        meta.className = "post-meta";
+        meta.innerHTML = "Posted: " + formatDateTime(post.created) + 
+                        (post.modified && post.modified !== post.created ? 
+                        "<br>Last Modified: " + formatDateTime(post.modified) : "");
+        
+        var readMoreLink = document.createElement("a");
+        readMoreLink.href = "/post.html?id=" + post.id;
+        readMoreLink.className = "read-more-btn";
+        readMoreLink.textContent = "Read More";
+        
+        postDiv.appendChild(title);
+        postDiv.appendChild(preview);
+        postDiv.appendChild(meta);
+        postDiv.appendChild(readMoreLink);
+        
+        postList.appendChild(postDiv);
+    }
+}
+
+function formatDateTime(dateString) {
+    var date = new Date(dateString);
+    return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+}
+
+function editPost(post) {
+    window.location.href = '/blog.html?action=edit&id=' + post.id;
+}
+
+function deletePost(postId) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("DELETE", root_url + "/api/posts/" + postId, true);
+    
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            loadPosts();
+        } else {
+            alert('Delete failed: ' + xhr.statusText);
+        }
+    };
+    
+    xhr.send();
+}
+
+function logout() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", root_url + "/api/logout", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                // Clear any client-side data
+                document.cookie = ""; // Clear cookies
+                // Redirect to home page
+                window.location.href = '/';
+            } else {
+                alert('Logout failed: ' + xhr.statusText);
+            }
+        }
+    };
+    xhr.send();
+}
+
+function loadPostForEdit(postId) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", root_url + "/api/posts/" + postId, true);
+    
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            try {
+                var post = JSON.parse(xhr.responseText);
+                document.getElementById('titleInput').value = post.title;
+                var contentInput = document.getElementById('contentInput');
+                contentInput.innerHTML = post.content;
+                
+                // Update editor title
+                var editorTitle = document.getElementById('editorTitle');
+                if (editorTitle) {
+                    editorTitle.textContent = 'Edit Post';
+                }
+                
+                // Re-initialize Prism.js for loaded content
+                if (typeof Prism !== 'undefined') {
+                    var codeBlocks = contentInput.querySelectorAll('pre code');
+                    for (var i = 0; i < codeBlocks.length; i++) {
+                        Prism.highlightElement(codeBlocks[i]);
+                    }
+                }
+                
+                // Show the post form
+                var postSection = document.getElementById('postSection');
+                if (postSection) {
+                    postSection.style.display = 'block';
+                }
+                
+                // Update form submission handler
+                var form = document.getElementById('postForm');
+                if (form) {
+                    form.onsubmit = function(e) {
+                        e.preventDefault();
+                        updatePost(postId);
+                    };
+                }
+            } catch (e) {
+                console.error('Error parsing post data:', e);
+                alert('Error loading post data');
+            }
+        } else if (xhr.readyState === 4) {
+            console.error('Failed to load post:', xhr.statusText);
+            alert('Failed to load post for editing');
+        }
+    };
+    
+    xhr.onerror = function() {
+        console.error('Network error occurred');
+        alert('Network error occurred while loading post');
+    };
+    
+    xhr.send();
+}
+
+function updatePost(postId) {
+    var title = document.getElementById('titleInput').value.trim();
+    var content = document.getElementById('contentInput').innerHTML;
+    
+    // Clean up the content before submission
+    content = cleanupContent(content);
+    
+    // Basic validation
+    if (!title || !content) {
+        alert('Please fill in both title and content');
+        return;
+    }
+    
+    var xhr = new XMLHttpRequest();
+    xhr.open('PUT', root_url + "/api/posts/" + postId, true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            window.location.href = '/blog.html';
+        } else {
+            console.error('Server response:', xhr.responseText);
+            alert('Update failed: ' + xhr.statusText);
+        }
+    };
+    
+    xhr.onerror = function() {
+        console.error('Network error occurred');
+        alert('Network error occurred');
+    };
+    
+    xhr.send(JSON.stringify({
+        title: title,
+        content: content
+    }));
+}
+
+function formatText(command) {
+    document.execCommand(command, false, null);
+}
+
+function submitPost(event) {
+    event.preventDefault();
+    
+    var title = document.getElementById('titleInput').value.trim();
+    var contentDiv = document.getElementById('contentInput');
+    var content = contentDiv ? contentDiv.innerHTML.trim() : '';
+    
+    // Debug logging
+    console.log('Title:', title);
+    console.log('Content:', content);
+    
+    // Basic validation
+    if (!title || !content) {
+        alert('Please fill in both title and content');
+        return;
+    }
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', root_url + "/api/posts", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    
+    // Create the post data object with both fields
+    var postData = {
+        title: title,
+        content: content
+    };
+    
+    // Debug logging of the final data being sent
+    console.log('Sending post data:', postData);
+    
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            window.location.href = '/blog.html';
+        } else {
+            console.error('Server response:', xhr.responseText);
+            alert('Post failed: ' + xhr.statusText);
+        }
+    };
+    
+    xhr.send(JSON.stringify(postData));
+}
+
+function insertCode() {
+    var selection = window.getSelection();
+    var range = selection.getRangeAt(0);
+    var selectedText = range.toString();
+    
+    if (!selectedText) {
+        alert('Please select some text first');
+        return;
+    }
+    
+    // Create modal for language selection
+    var modal = document.createElement('div');
+    modal.className = 'code-language-modal';
+    modal.innerHTML = 
+        '<div class="modal-content">' +
+            '<h4>Select Programming Language</h4>' +
+            '<select class="language-select">' +
+                '<option value="">Select language...</option>' +
+                '<option value="javascript">JavaScript</option>' +
+                '<option value="python">Python</option>' +
+                '<option value="java">Java</option>' +
+                '<option value="cpp">C++</option>' +
+                '<option value="csharp">C#</option>' +
+                '<option value="php">PHP</option>' +
+                '<option value="ruby">Ruby</option>' +
+                '<option value="html">HTML</option>' +
+                '<option value="css">CSS</option>' +
+                '<option value="sql">SQL</option>' +
+            '</select>' +
+            '<div class="modal-buttons">' +
+                '<button class="ok-btn">OK</button>' +
+                '<button class="cancel-btn">Cancel</button>' +
+            '</div>' +
+        '</div>';
+    
+    document.body.appendChild(modal);
+    var languageSelect = modal.querySelector('.language-select');
+    
+    modal.querySelector('.ok-btn').onclick = function() {
+        var language = languageSelect.value;
+        if (!language) {
+            alert('Please select a language');
+            return;
+        }
+        
+        // Create the code block with Prism.js classes
+        var pre = document.createElement('pre');
+        pre.className = 'line-numbers';
+        var code = document.createElement('code');
+        code.className = 'language-' + language;
+        
+        // Process the text to preserve indentation and line breaks
+        var processedText = selectedText
+            .replace(/\r\n/g, '\n')  // Normalize line endings
+            .replace(/\n/g, '\n')    // Ensure line breaks are preserved
+            .replace(/\t/g, '    '); // Convert tabs to spaces
+        
+        code.textContent = processedText;
+        pre.appendChild(code);
+        
+        // Replace the selected text with the code block
+        range.deleteContents();
+        range.insertNode(pre);
+        
+        // Add a line break after the code block
+        var br = document.createElement('br');
+        pre.parentNode.insertBefore(br, pre.nextSibling);
+        
+        // Initialize Prism highlighting
+        Prism.highlightElement(code);
+        
+        // Remove modal
+        document.body.removeChild(modal);
+    };
+    
+    modal.querySelector('.cancel-btn').onclick = function() {
+        document.body.removeChild(modal);
+    };
+}
+
+function insertImage() {
+    const url = prompt('Enter image URL:');
+    if (!url) return;
+    
+    const img = document.createElement('img');
+    img.src = url;
+    img.alt = 'Image';
+    
+    const contentDiv = document.getElementById('contentInput');
+    const selection = window.getSelection();
+    const range = selection.getRangeAt(0);
+    range.insertNode(img);
+}
+
+function insertVideo() {
+    var url = prompt('Enter video URL (YouTube or direct video file):');
+    if (!url) return;
+    
+    var element;
+    if (url.includes('youtube.com') || url.includes('youtu.be')) {
+        // Convert to embed URL
+        var videoId = url.split('v=')[1] || url.split('/').pop();
+        element = document.createElement('iframe');
+        element.src = 'https://www.youtube.com/embed/' + videoId;
+        element.width = '560';
+        element.height = '315';
+        element.frameBorder = '0';
+        element.allowFullscreen = true;
+    } else {
+        element = document.createElement('video');
+        element.src = url;
+        element.controls = true;
+        element.width = '560';
+    }
+    
+    var selection = window.getSelection();
+    var range = selection.getRangeAt(0);
+    range.insertNode(element);
+}
+
+function insertAudio() {
+    const url = prompt('Enter audio URL:');
+    if (!url) return;
+    
+    const audio = document.createElement('audio');
+    audio.src = url;
+    audio.controls = true;
+    
+    const selection = window.getSelection();
+    const range = selection.getRangeAt(0);
+    range.insertNode(audio);
+}
+
+// Add a variable to track current media type
+var currentMediaType = 'image'; // Default to image
+
+// Functions
+function openFileModal(type) {
+    currentMediaType = type;
+    var modal = document.getElementById('fileModal');
+    modal.style.display = 'flex';
+    
+    // Update file input accept attribute
+    var mediaFileInput = document.getElementById('mediaFileInput');
+    if (mediaFileInput) {
+        switch(type) {
+            case 'image':
+                mediaFileInput.accept = 'image/*';
+                break;
+            case 'video':
+                mediaFileInput.accept = 'video/*';
+                break;
+            case 'audio':
+                mediaFileInput.accept = 'audio/*';
+                break;
+        }
+    }
+    
+    // Update modal title immediately
+    updateModalTitle();
+    
+    // Load media files with a small delay to ensure modal is visible
+    setTimeout(function() {
+        loadMediaFiles();
+    }, 100);
+}
+
+function closeFileModal() {
+    var modal = document.getElementById('fileModal');
+    if (modal) {
+        modal.style.display = 'none';
+        // Clear the file list when closing
+        var mediaList = document.getElementById('mediaFileList');
+        if (mediaList) {
+            mediaList.innerHTML = '';
+        }
+    }
+}
+
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // File input change handler
+    var mediaFileInput = document.getElementById('mediaFileInput');
+    if (mediaFileInput) {
+        mediaFileInput.onchange = function(e) {
+            var fileName = e.target.files[0] ? e.target.files[0].name : 'No file chosen';
+            document.querySelector('.file-name-display').textContent = fileName;
+        };
+    }
+
+    // Form submission handler
+    var mediaUploadForm = document.getElementById('mediaUploadForm');
+    if (mediaUploadForm) {
+        mediaUploadForm.onsubmit = function(e) {
+            e.preventDefault();
+            
+            var fileInput = document.getElementById('mediaFileInput');
+            if (!fileInput.files[0]) {
+                alert('Please select a file first');
+                return;
+            }
+            
+            var formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+            
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', root_url + "/api/blog-media/upload", true);
+
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.success) {
+                        // Reset the form
+                        fileInput.value = '';
+                        document.querySelector('.file-name-display').textContent = 'No file chosen';
+                        
+                        // Insert the uploaded file
+                        insertMediaFile({ name: response.filename });
+                        
+                        // Reload media files list
+                        loadMediaFiles();
+                    } else {
+                        alert('Upload failed: ' + (response.message || 'Unknown error'));
+                    }
+                } else {
+                    alert('Upload failed: ' + xhr.statusText);
+                }
+            };
+            
+            xhr.onerror = function() {
+                alert('Upload failed: Network Error');
+            };
+            
+            xhr.send(formData);
+        };
+    }
+});
+
+function loadMediaFiles() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', root_url + "/api/files", true);
+    
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            try {
+                var files = JSON.parse(xhr.responseText);
+                displayMediaFiles(files);
+            } catch (error) {
+                console.error('Error parsing files:', error);
+                document.getElementById('mediaFileList').innerHTML = 'Error loading files';
+            }
+        } else {
+            document.getElementById('mediaFileList').innerHTML = 'Error loading files';
+        }
+    };
+    
+    xhr.onerror = function() {
+        document.getElementById('mediaFileList').innerHTML = 'Error loading files';
+    };
+    
+    xhr.send();
+}
+
+function displayMediaFiles(files) {
+    var mediaList = document.getElementById('mediaFileList');
+    if (!mediaList) return;
+    
+    mediaList.innerHTML = '<div class="loading">Loading ' + currentMediaType + ' files...</div>';
+    
+    // Filter for blog media files and current media type
+    files = files.filter(function(file) {
+        if (file.name.indexOf('blog_media_') !== 0) return false;
+        
+        switch(currentMediaType) {
+            case 'image':
+                return file.name.match(/\.(jpg|jpeg|png|gif|ico|bmp|webp)$/i);
+            case 'video':
+                return file.name.match(/\.(mp4|webm|ogg|mov|avi)$/i);
+            case 'audio':
+                return file.name.match(/\.(mp3|wav|ogg|m4a)$/i);
+            default:
+                return false;
+        }
+    });
+    
+    // Clear loading message
+    mediaList.innerHTML = '';
+    
+    if (files.length === 0) {
+        mediaList.innerHTML = '<div class="no-files">No ' + currentMediaType + ' files found</div>';
+        return;
+    }
+    
+    files.forEach(function(file) {
+        var item = document.createElement('div');
+        item.className = 'media-item';
+        
+        var previewContainer = document.createElement('div');
+        previewContainer.className = 'media-preview-container';
+        
+        // Create preview based on media type
+        if (currentMediaType === 'image') {
+            var img = document.createElement('img');
+            img.src = root_url + "/api/files/download/" + file.name;
+            img.className = 'media-preview';
+            img.alt = file.name.replace('blog_media_', '');
+            previewContainer.appendChild(img);
+        } else if (currentMediaType === 'video') {
+            var video = document.createElement('video');
+            video.src = root_url + "/api/files/download/" + file.name;
+            video.className = 'media-preview';
+            previewContainer.appendChild(video);
+        } else if (currentMediaType === 'audio') {
+            var icon = document.createElement('i');
+            icon.className = 'fas fa-music media-preview-icon';
+            previewContainer.appendChild(icon);
+        }
+        
+        var nameDiv = document.createElement('div');
+        nameDiv.className = 'media-name';
+        nameDiv.textContent = file.name.replace('blog_media_', '');
+        
+        item.appendChild(previewContainer);
+        item.appendChild(nameDiv);
+        
+        item.addEventListener('click', function() {
+            insertMediaFile(file);
+        });
+        
+        mediaList.appendChild(item);
+    });
+}
+
+// Separate function to handle media insertion
+function insertMediaFile(file) {
+    var contentInput = document.getElementById('contentInput');
+    if (!contentInput) return;
+    
+    var element = null;
+    var fileUrl = root_url + "/api/files/download/" + file.name;
+
+    // Create element based on file type - expanded file type support
+    if (file.name.match(/\.(jpg|jpeg|png|gif|ico|bmp|webp)$/i)) {
+        element = document.createElement('img');
+        element.src = fileUrl;
+        element.alt = file.name.replace('blog_media_', '');
+        element.className = 'media-content'; // Add class for styling
+    } else if (file.name.match(/\.(mp4|webm|ogg|mov|avi)$/i)) {
+        element = document.createElement('video');
+        element.src = fileUrl;
+        element.controls = true;
+        element.className = 'media-content';
+    } else if (file.name.match(/\.(mp3|wav|ogg|m4a)$/i)) {
+        element = document.createElement('audio');
+        element.src = fileUrl;
+        element.controls = true;
+        element.className = 'media-content';
+    }
+    
+    // Check if element was created successfully
+    if (!element) {
+        console.error('Could not create element for file:', file);
+        alert('Unsupported file type. Please use image, video, or audio files.');
+        return;
+    }
+    
+    // Get current selection or create new one
+    var selection = window.getSelection();
+    var range;
+    
+    try {
+        range = selection.getRangeAt(0);
+    } catch (e) {
+        range = document.createRange();
+        range.selectNodeContents(contentInput);
+        range.collapse(false);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+    
+    // Function to handle the actual insertion
+    function insertElement() {
+        // Insert the media element
+        range.insertNode(element);
+        
+        // Add a line break
+        var br = document.createElement('br');
+        range = document.createRange();
+        range.setStartAfter(element);
+        range.collapse(true);
+        range.insertNode(br);
+        
+        // Update selection
+        range.setStartAfter(br);
+        range.collapse(true);
+        selection.removeAllRanges();
+        selection.addRange(range);
+        
+        // Close modal
+        closeFileModal();
+    }
+    
+    // Handle different types of media
+    if (element instanceof HTMLImageElement) {
+        element.onload = insertElement;
+        element.onerror = function() {
+            console.error('Failed to load image:', fileUrl);
+            alert('Failed to load image file');
+        };
+    } else if (element instanceof HTMLVideoElement) {
+        element.onloadedmetadata = insertElement;
+        element.onerror = function() {
+            console.error('Failed to load video:', fileUrl);
+            alert('Failed to load video file');
+        };
+    } else {
+        // For audio or other elements, insert immediately
+        insertElement();
+    }
+}
+
+// Update the modal title based on media type
+function updateModalTitle() {
+    var modalTitle = document.querySelector('.modal-header h3');
+    if (modalTitle) {
+        modalTitle.textContent = currentMediaType.charAt(0).toUpperCase() + 
+                               currentMediaType.slice(1) + ' Files';
+    }
+}
+
+// Add this function to clean up content
+function cleanupContent(content) {
+    // Create a temporary div to handle HTML content
+    var temp = document.createElement('div');
+    temp.innerHTML = content;
+    
+    // Fix code blocks
+    temp.querySelectorAll('pre code').forEach(function(block) {
+        // Ensure proper class names
+        if (!block.className.includes('language-')) {
+            block.className = 'language-plaintext';
+        }
+        // Clean up content
+        block.textContent = block.textContent
+            .replace(/\u200B/g, '') // Remove zero-width spaces
+            .replace(/\u00A0/g, ' '); // Replace non-breaking spaces
+    });
+    
+    // Fix pre elements
+    temp.querySelectorAll('pre').forEach(function(pre) {
+        if (!pre.className.includes('line-numbers')) {
+            pre.className = 'line-numbers';
+        }
+    });
+    
+    return temp.innerHTML;
+}
+
+// Add event listener for content changes
+document.addEventListener('DOMContentLoaded', function() {
+    var contentInput = document.getElementById('contentInput');
+    if (contentInput) {
+        contentInput.addEventListener('input', function() {
+            // Re-highlight code blocks when content changes
+            var codeBlocks = this.querySelectorAll('pre code');
+            for (var i = 0; i < codeBlocks.length; i++) {
+                Prism.highlightElement(codeBlocks[i]);
+            }
+        });
+        
+        // Handle paste events to preserve formatting for IE11
+        contentInput.addEventListener('paste', function(e) {
+            e.preventDefault();
+            var text;
+            
+            // Handle clipboard data for IE11 and modern browsers
+            if (window.clipboardData && window.clipboardData.getData) {
+                // For IE11
+                text = window.clipboardData.getData('Text');
+            } else if (e.clipboardData && e.clipboardData.getData) {
+                // For modern browsers
+                text = e.clipboardData.getData('text/plain');
+            } else {
+                // Fallback
+                text = '';
+            }
+            
+            // Insert text at cursor position
+            if (document.selection) {
+                // For IE11
+                var range = document.selection.createRange();
+                range.text = text;
+            } else if (window.getSelection) {
+                // For modern browsers
+                var range = window.getSelection().getRangeAt(0);
+                range.deleteContents();
+                range.insertNode(document.createTextNode(text));
+            }
+        });
+    }
+});

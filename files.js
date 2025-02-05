@@ -1,1 +1,328 @@
-function checkAuthStatus(e){var t=new XMLHttpRequest;t.open("GET",root_url+"/api/check-auth?t="+(new Date).getTime(),!0),t.withCredentials=!0,t.onreadystatechange=function(){if(4===t.readyState)if(200===t.status){var a=JSON.parse(t.responseText),n=document.getElementById("userStatus"),i=document.getElementById("uploadSection");if(!0===a.isAuthenticated)n.textContent="Administrator",i&&(i.style.display="block"),e&&e();else if(!0===a.isGuest)n.textContent="Guest User",i&&(i.style.display="none"),e&&e();else{var o=document.getElementById("authModal");o&&(o.style.display="flex")}}else{var l=document.getElementById("fileList");l&&(l.innerHTML='<div class="loading">Error checking access. Please try again.</div>')}},t.send()}function continueAsGuest(){var e=new XMLHttpRequest;e.open("POST",root_url+"/api/guest",!0),e.setRequestHeader("Content-Type","application/json"),e.onreadystatechange=function(){4===e.readyState&&200===e.status&&location.reload()},e.send(JSON.stringify({}))}function loadFiles(){var e=new XMLHttpRequest;e.open("GET",root_url+"/api/files",!0),e.onreadystatechange=function(){4===e.readyState&&200===e.status&&displayFiles(JSON.parse(e.responseText))},e.send()}function displayFiles(e){var t=document.getElementById("fileList");t&&(t.innerHTML="",(e=e.filter((function(e){return 0!==e.name.indexOf("blog_media_")}))).forEach((function(e){var a=document.createElement("div");a.className="file-item";var n=getFileIconClass(e.name.split(".").pop().toLowerCase()),i=document.createElement("div");i.className="file-info";var o=document.createElement("i");o.className="fas "+n+" file-icon",i.appendChild(o);var l=document.createElement("div");l.className="file-details";var r=document.createElement("div");r.className="file-name",r.textContent=e.name,l.appendChild(r);var s=document.createElement("div");s.className="file-meta",s.innerHTML="Size: "+formatFileSize(e.size)+"<br>Uploaded: "+formatDateTime(e.created)+"<br>Modified: "+formatDateTime(e.modified),l.appendChild(s),i.appendChild(l),a.appendChild(i);var d=document.createElement("div");d.className="file-actions";var f=document.createElement("button");f.className="action-btn download-btn",f.onclick=function(){downloadFile(e.name)};var c=document.createElement("i");if(c.className="fas fa-download",f.appendChild(c),d.appendChild(f),window.isAdmin){var u=document.createElement("button");u.className="action-btn delete-btn",u.onclick=function(){deleteFile(e.name)};var m=document.createElement("i");m.className="fas fa-trash",u.appendChild(m),d.appendChild(u)}a.appendChild(d),t.appendChild(a)})))}function getFileIconClass(e){return{pdf:"fa-file-pdf",doc:"fa-file-word",docx:"fa-file-word",xls:"fa-file-excel",xlsx:"fa-file-excel",ppt:"fa-file-powerpoint",pptx:"fa-file-powerpoint",jpg:"fa-file-image",jpeg:"fa-file-image",png:"fa-file-image",gif:"fa-file-image",mp3:"fa-file-audio",wav:"fa-file-audio",mp4:"fa-file-video",mov:"fa-file-video",zip:"fa-file-archive",rar:"fa-file-archive",txt:"fa-file-alt",json:"fa-file-code",js:"fa-file-code",css:"fa-file-code",html:"fa-file-code"}[e]||"fa-file"}function formatFileSize(e){if(0===e)return"0 Bytes";var t=Math.floor(Math.log(e)/Math.log(1024));return parseFloat((e/Math.pow(1024,t)).toFixed(2))+" "+["Bytes","KB","MB","GB"][t]}function formatDateTime(e){if(!e)return"Unknown";var t=new Date(e);if(isNaN(t.getTime()))return"Unknown";var a=new Date,n=new Date(a);n.setDate(n.getDate()-1);var i=t.getHours(),o=t.getMinutes(),l=i>=12?"PM":"AM",r=(i=(i%=12)||12)+":"+(o=o<10?"0"+o:o)+" "+l;if(t.toDateString()===a.toDateString())return"Today at "+r;if(t.toDateString()===n.toDateString())return"Yesterday at "+r;return["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][t.getMonth()]+" "+t.getDate()+(t.getFullYear()!==a.getFullYear()?", "+t.getFullYear():"")+" at "+r}function downloadFile(e){window.location.href=root_url+"/api/files/download/"+e}function logout(){var e=new XMLHttpRequest;e.open("POST",root_url+"/api/logout",!0),e.onreadystatechange=function(){4===e.readyState&&200===e.status&&(window.location.href="/")},e.send()}function deleteFile(e){var t=new XMLHttpRequest;t.open("DELETE",root_url+"/api/files/"+e,!0),t.onload=function(){200===t.status?location.reload():alert("Delete failed: "+t.statusText)},t.onerror=function(){alert("Delete failed: Network Error")},t.send()}window.onload=function(){var e=document.getElementById("fileList");e&&(e.innerHTML='<div class="loading">Checking access...</div>'),setTimeout((function(){checkAuthStatus((function(){loadFiles()}))}),300)},document.getElementById("uploadForm")&&(document.getElementById("uploadForm").onsubmit=function(e){e.preventDefault();var t=new FormData,a=document.querySelector('input[type="file"]');if(a.files[0]){t.append("file",a.files[0]);var n=new XMLHttpRequest;n.open("POST",root_url+"/api/files/upload",!0),n.onload=function(){200===n.status?location.reload():(console.error("Error:",n.statusText),alert("Upload failed: "+n.statusText))},n.onerror=function(){console.error("Error:",n.statusText),alert("Upload failed: Network Error")},n.send(t)}else alert("Please select a file first")},document.getElementById("fileInput").onchange=function(){var e=this.files[0]?this.files[0].name:"No file chosen";document.querySelector(".file-name-display").textContent=e});
+window.onload = function() {
+    // Show loading state immediately
+    var fileList = document.getElementById("fileList");
+    if (fileList) {
+        fileList.innerHTML = '<div class="loading">Checking access...</div>';
+    }
+
+    // Add a small delay before checking auth
+    setTimeout(function() {
+        checkAuthStatus(function() {
+            loadFiles();
+        });
+    }, 300); // 300ms delay
+};
+
+function checkAuthStatus(callback) {
+    if (!checkCookiesEnabled()) {
+        console.error('Cookies are disabled');
+        return;
+    }
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", root_url + "/api/check-auth?t=" + new Date().getTime(), true);
+    xhr.withCredentials = true;
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                try {
+                    var response = JSON.parse(xhr.responseText);
+                    console.log('Auth check response:', response);
+                    var userStatus = document.getElementById("userStatus");
+                    var uploadSection = document.getElementById("uploadSection");
+                    
+                    if (response.isAuthenticated === true) {
+                        userStatus.textContent = "Administrator";
+                        if (uploadSection) {
+                            uploadSection.style.display = "block";
+                        }
+                        if (callback) callback();
+                    } else if (response.isGuest === true) {
+                        userStatus.textContent = "Guest User";
+                        if (uploadSection) {
+                            uploadSection.style.display = "none";
+                        }
+                        if (callback) callback();
+                    } else {
+                        // Show modal instead of immediate redirect
+                        var modal = document.getElementById("authModal");
+                        if (modal) {
+                            modal.style.display = "flex";
+                        }
+                    }
+                } catch (e) {
+                    console.error('Error parsing auth response:', e);
+                }
+            } else {
+                // Handle error case
+                var fileList = document.getElementById("fileList");
+                if (fileList) {
+                    fileList.innerHTML = '<div class="loading">Error checking access. Please try again.</div>';
+                }
+            }
+        }
+    };
+    xhr.send();
+}
+
+// Add guest continuation function
+function continueAsGuest() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", root_url + "/api/guest", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            location.reload();
+        }
+    };
+    
+    xhr.send(JSON.stringify({}));
+}
+
+function loadFiles() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", root_url + "/api/files", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var files = JSON.parse(xhr.responseText);
+            displayFiles(files);
+        }
+    };
+    xhr.send();
+}
+
+function displayFiles(files) {
+    var fileList = document.getElementById("fileList");
+    if (!fileList) return;
+    
+    fileList.innerHTML = "";
+    
+    // Filter out blog media files - IE11 compatible
+    files = files.filter(function(file) {
+        return file.name.indexOf('blog_media_') !== 0;
+    });
+    
+    files.forEach(function(file) {
+        var fileDiv = document.createElement("div");
+        fileDiv.className = "file-item";
+        
+        // Get file extension
+        var ext = file.name.split('.').pop().toLowerCase();
+        
+        // Create file icon based on type
+        var iconClass = getFileIconClass(ext);
+        
+        // Create file info div
+        var fileInfo = document.createElement("div");
+        fileInfo.className = "file-info";
+        
+        // Add icon
+        var icon = document.createElement("i");
+        icon.className = "fas " + iconClass + " file-icon";
+        fileInfo.appendChild(icon);
+        
+        // Add file details
+        var details = document.createElement("div");
+        details.className = "file-details";
+        
+        var fileName = document.createElement("div");
+        fileName.className = "file-name";
+        fileName.textContent = file.name;
+        details.appendChild(fileName);
+        
+        var fileMeta = document.createElement("div");
+        fileMeta.className = "file-meta";
+        fileMeta.innerHTML = 
+            'Size: ' + formatFileSize(file.size) + '<br>' +
+            'Uploaded: ' + formatDateTime(file.created) + '<br>' +
+            'Modified: ' + formatDateTime(file.modified);
+        details.appendChild(fileMeta);
+        
+        fileInfo.appendChild(details);
+        fileDiv.appendChild(fileInfo);
+        
+        // Add file actions
+        var actions = document.createElement("div");
+        actions.className = "file-actions";
+        
+        // Download button
+        var downloadBtn = document.createElement("button");
+        downloadBtn.className = "action-btn download-btn";
+        downloadBtn.onclick = function() {
+            downloadFile(file.name);
+        };
+        var downloadIcon = document.createElement("i");
+        downloadIcon.className = "fas fa-download";
+        downloadBtn.appendChild(downloadIcon);
+        actions.appendChild(downloadBtn);
+        
+        // Delete button (for admin only)
+        if (window.isAdmin) {
+            var deleteBtn = document.createElement("button");
+            deleteBtn.className = "action-btn delete-btn";
+            deleteBtn.onclick = function() {
+                deleteFile(file.name);
+            };
+            var deleteIcon = document.createElement("i");
+            deleteIcon.className = "fas fa-trash";
+            deleteBtn.appendChild(deleteIcon);
+            actions.appendChild(deleteBtn);
+        }
+        
+        fileDiv.appendChild(actions);
+        fileList.appendChild(fileDiv);
+    });
+}
+
+function getFileIconClass(ext) {
+    var iconMap = {
+        'pdf': 'fa-file-pdf',
+        'doc': 'fa-file-word',
+        'docx': 'fa-file-word',
+        'xls': 'fa-file-excel',
+        'xlsx': 'fa-file-excel',
+        'ppt': 'fa-file-powerpoint',
+        'pptx': 'fa-file-powerpoint',
+        'jpg': 'fa-file-image',
+        'jpeg': 'fa-file-image',
+        'png': 'fa-file-image',
+        'gif': 'fa-file-image',
+        'mp3': 'fa-file-audio',
+        'wav': 'fa-file-audio',
+        'mp4': 'fa-file-video',
+        'mov': 'fa-file-video',
+        'zip': 'fa-file-archive',
+        'rar': 'fa-file-archive',
+        'txt': 'fa-file-alt',
+        'json': 'fa-file-code',
+        'js': 'fa-file-code',
+        'css': 'fa-file-code',
+        'html': 'fa-file-code'
+    };
+    
+    return iconMap[ext] || 'fa-file';
+}
+
+function formatFileSize(bytes) {
+    if (bytes === 0) return '0 Bytes';
+    
+    var k = 1024;
+    var sizes = ['Bytes', 'KB', 'MB', 'GB'];
+    
+    var i = Math.floor(Math.log(bytes) / Math.log(k));
+    
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+}
+
+function formatDateTime(dateString) {
+    if (!dateString) return 'Unknown';
+    
+    var date = new Date(dateString);
+    if (isNaN(date.getTime())) return 'Unknown';
+    
+    var today = new Date();
+    var yesterday = new Date(today);
+    yesterday.setDate(yesterday.getDate() - 1);
+    
+    // Format time
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var timeString = hours + ':' + minutes + ' ' + ampm;
+    
+    // Format date
+    if (date.toDateString() === today.toDateString()) {
+        return "Today at " + timeString;
+    } else if (date.toDateString() === yesterday.toDateString()) {
+        return "Yesterday at " + timeString;
+    } else {
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        return months[date.getMonth()] + ' ' + date.getDate() + 
+               (date.getFullYear() !== today.getFullYear() ? ', ' + date.getFullYear() : '') +
+               ' at ' + timeString;
+    }
+}
+
+function downloadFile(filename) {
+    window.location.href = root_url + "/api/files/download/" + filename;
+}
+
+function logout() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", root_url + "/api/logout", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            window.location.href = "/";
+        }
+    };
+    xhr.send();
+}
+
+// For admin only
+if (document.getElementById("uploadForm")) {
+    document.getElementById('uploadForm').onsubmit = function(e) {
+        e.preventDefault();
+        
+        var formData = new FormData();
+        var fileInput = document.querySelector('input[type="file"]');
+        
+        if (!fileInput.files[0]) {
+            alert('Please select a file first');
+            return;
+        }
+        
+        formData.append('file', fileInput.files[0]);
+        
+        // Use XMLHttpRequest for IE11 compatibility
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', root_url + "/api/files/upload", true);
+
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                location.reload();
+            } else {
+                console.error('Error:', xhr.statusText);
+                alert('Upload failed: ' + xhr.statusText);
+            }
+        };
+        
+        xhr.onerror = function() {
+            console.error('Error:', xhr.statusText);
+            alert('Upload failed: Network Error');
+        };
+        
+        xhr.send(formData);
+    };
+
+    // Update file name display when file is selected
+    document.getElementById('fileInput').onchange = function() {
+        var fileName = this.files[0] ? this.files[0].name : 'No file chosen';
+        document.querySelector('.file-name-display').textContent = fileName;
+    };
+}
+
+// Add delete function
+function deleteFile(filename) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("DELETE", root_url + "/api/files/" + filename, true);
+    
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            location.reload();
+        } else {
+            alert('Delete failed: ' + xhr.statusText);
+        }
+    };
+    
+    xhr.onerror = function() {
+        alert('Delete failed: Network Error');
+    };
+    
+    xhr.send();
+}
