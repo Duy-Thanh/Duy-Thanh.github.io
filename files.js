@@ -250,14 +250,26 @@ function downloadFile(filename) {
 }
 
 function logout() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", root_url + "/api/logout", true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            window.location.href = "/";
+    fetch(`${root_url}/api/logout`, {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
         }
-    };
-    xhr.send();
+    })
+    .then(response => {
+        // Clear any client-side cookies
+        document.cookie.split(";").forEach(function(c) { 
+            document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); 
+        });
+        // Redirect regardless of response
+        window.location.href = '/';
+    })
+    .catch(error => {
+        console.error('Logout error:', error);
+        // Still redirect on error after clearing cookies
+        window.location.href = '/';
+    });
 }
 
 // For admin only

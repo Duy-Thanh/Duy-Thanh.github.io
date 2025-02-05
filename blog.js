@@ -166,21 +166,23 @@ function deletePost(postId) {
 function logout() {
     fetch(`${root_url}/api/logout`, {
         method: 'POST',
-        credentials: 'include'
-    })
-    .then(response => {
-        if (response.ok) {
-            // Clear any client-side data
-            document.cookie = "";
-            // Redirect to home page
-            window.location.href = '/';
-        } else {
-            throw new Error('Logout failed');
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
         }
     })
+    .then(response => {
+        // Clear any client-side cookies
+        document.cookie.split(";").forEach(function(c) { 
+            document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); 
+        });
+        // Redirect regardless of response
+        window.location.href = '/';
+    })
     .catch(error => {
-        console.error('Error:', error);
-        alert('Logout failed: ' + error.message);
+        console.error('Logout error:', error);
+        // Still redirect on error after clearing cookies
+        window.location.href = '/';
     });
 }
 
