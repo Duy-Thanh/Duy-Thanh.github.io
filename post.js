@@ -21,32 +21,27 @@ function getPostId() {
 }
 
 function loadPost() {
-    var postId = getPostId();
+    const postId = getPostId();
     if (!postId) {
         window.location.href = '/blog.html';
         return;
     }
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", root_url + "/api/posts/" + postId, true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                try {
-                    var post = JSON.parse(xhr.responseText);
-                    displayPost(post);
-                } catch (e) {
-                    displayError("Error parsing post data");
-                }
-            } else {
-                displayError("Error loading post: " + xhr.statusText);
-            }
+    fetch(`${root_url}/api/posts/${postId}`, {
+        method: 'GET',
+        credentials: 'include'
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
-    };
-    xhr.onerror = function() {
-        displayError("Network error occurred");
-    };
-    xhr.send();
+        return response.json();
+    })
+    .then(post => displayPost(post))
+    .catch(error => {
+        console.error('Error:', error);
+        displayError("Error loading post: " + error.message);
+    });
 }
 
 function displayPost(post) {
@@ -89,18 +84,21 @@ function displayPost(post) {
 }
 
 function checkAuthStatus() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", root_url + "/api/check-auth", true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            var response = JSON.parse(xhr.responseText);
-            var controls = document.getElementById("postControls");
-            if (response.isAuthenticated === true && controls) {
-                controls.style.display = "flex";
-            }
+    fetch(`${root_url}/api/check-auth`, {
+        method: 'GET',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
         }
-    };
-    xhr.send();
+    })
+    .then(response => response.json())
+    .then(response => {
+        const controls = document.getElementById("postControls");
+        if (response.isAuthenticated === true && controls) {
+            controls.style.display = "flex";
+        }
+    })
+    .catch(error => console.error('Auth check error:', error));
 }
 
 function formatDateTime(dateString) {
@@ -114,16 +112,23 @@ function editPost() {
 }
 
 function deletePost() {
-    var postId = getPostId();
+    const postId = getPostId();
     if (confirm('Are you sure you want to delete this post?')) {
-        var xhr = new XMLHttpRequest();
-        xhr.open("DELETE", root_url + "/api/posts/" + postId, true);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
+        fetch(`${root_url}/api/posts/${postId}`, {
+            method: 'DELETE',
+            credentials: 'include'
+        })
+        .then(response => {
+            if (response.ok) {
                 window.location.href = '/blog.html';
+            } else {
+                throw new Error('Delete failed');
             }
-        };
-        xhr.send();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Delete failed: ' + error.message);
+        });
     }
 }
 

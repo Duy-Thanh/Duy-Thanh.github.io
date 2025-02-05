@@ -44,61 +44,55 @@ window.onload = function() {
 };
 
 function checkAuthStatus() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", root_url + "/api/check-auth", true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            var response = JSON.parse(xhr.responseText);
-            var userStatus = document.getElementById("userStatus");
-            var postSection = document.getElementById("postSection");
-            var loginBtn = document.getElementById("loginBtn");
-            var logoutBtn = document.getElementById("logoutBtn");
-            
-            if (response.isAuthenticated === true) {
-                userStatus.textContent = "Administrator";
-                if (postSection) postSection.style.display = "block";
-                if (loginBtn) loginBtn.style.display = "none";
-                if (logoutBtn) logoutBtn.style.display = "inline-block";
-                
-                // Refresh the posts to show admin controls
-                loadPosts();
-            } else {
-                userStatus.textContent = "";
-                if (postSection) postSection.style.display = "none";
-                if (loginBtn) {
-                    loginBtn.style.display = "inline-block";
-                    loginBtn.onclick = function() {
-                        window.location.href = '/login.html?redirect=blog';
-                    };
-                }
-                if (logoutBtn) logoutBtn.style.display = "none";
-                
-                // Refresh the posts without admin controls
-                loadPosts();
-            }
+    fetch(`${root_url}/api/check-auth`, {
+        method: 'GET',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
         }
-    };
-    xhr.send();
+    })
+    .then(response => response.json())
+    .then(response => {
+        const userStatus = document.getElementById("userStatus");
+        const postSection = document.getElementById("postSection");
+        const loginBtn = document.getElementById("loginBtn");
+        const logoutBtn = document.getElementById("logoutBtn");
+        
+        if (response.isAuthenticated === true) {
+            userStatus.textContent = "Administrator";
+            if (postSection) postSection.style.display = "block";
+            if (loginBtn) loginBtn.style.display = "none";
+            if (logoutBtn) logoutBtn.style.display = "inline-block";
+            loadPosts();
+        } else {
+            userStatus.textContent = "";
+            if (postSection) postSection.style.display = "none";
+            if (loginBtn) {
+                loginBtn.style.display = "inline-block";
+                loginBtn.onclick = () => window.location.href = '/login.html?redirect=blog';
+            }
+            if (logoutBtn) logoutBtn.style.display = "none";
+            loadPosts();
+        }
+    })
+    .catch(error => console.error('Auth check error:', error));
 }
 
 function loadPosts() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", root_url + "/api/posts", true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            var posts = JSON.parse(xhr.responseText);
-            displayPosts(posts);
-        }
-    };
-    xhr.send();
+    fetch(`${root_url}/api/posts`, {
+        method: 'GET',
+        credentials: 'include'
+    })
+    .then(response => response.json())
+    .then(posts => displayPosts(posts))
+    .catch(error => console.error('Error loading posts:', error));
 }
 
 function displayPosts(posts) {
     var postList = document.getElementById("postList");
     postList.innerHTML = "";
 
-    for (var i = 0; i < posts.length; i++) {
-        var post = posts[i];
+    posts.forEach(post => {
         var postDiv = document.createElement("div");
         postDiv.className = "post-item";
         
@@ -142,7 +136,7 @@ function displayPosts(posts) {
         postDiv.appendChild(readMoreLink);
         
         postList.appendChild(postDiv);
-    }
+    });
 }
 
 function formatDateTime(dateString) {
@@ -170,116 +164,94 @@ function deletePost(postId) {
 }
 
 function logout() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", root_url + "/api/logout", true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                // Clear any client-side data
-                document.cookie = ""; // Clear cookies
-                // Redirect to home page
-                window.location.href = '/';
-            } else {
-                alert('Logout failed: ' + xhr.statusText);
-            }
+    fetch(`${root_url}/api/logout`, {
+        method: 'POST',
+        credentials: 'include'
+    })
+    .then(response => {
+        if (response.ok) {
+            // Clear any client-side data
+            document.cookie = "";
+            // Redirect to home page
+            window.location.href = '/';
+        } else {
+            throw new Error('Logout failed');
         }
-    };
-    xhr.send();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Logout failed: ' + error.message);
+    });
 }
 
 function loadPostForEdit(postId) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", root_url + "/api/posts/" + postId, true);
-    
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            try {
-                var post = JSON.parse(xhr.responseText);
-                document.getElementById('titleInput').value = post.title;
-                var contentInput = document.getElementById('contentInput');
-                contentInput.innerHTML = post.content;
-                
-                // Update editor title
-                var editorTitle = document.getElementById('editorTitle');
-                if (editorTitle) {
-                    editorTitle.textContent = 'Edit Post';
-                }
-                
-                // Re-initialize Prism.js for loaded content
-                if (typeof Prism !== 'undefined') {
-                    var codeBlocks = contentInput.querySelectorAll('pre code');
-                    for (var i = 0; i < codeBlocks.length; i++) {
-                        Prism.highlightElement(codeBlocks[i]);
-                    }
-                }
-                
-                // Show the post form
-                var postSection = document.getElementById('postSection');
-                if (postSection) {
-                    postSection.style.display = 'block';
-                }
-                
-                // Update form submission handler
-                var form = document.getElementById('postForm');
-                if (form) {
-                    form.onsubmit = function(e) {
-                        e.preventDefault();
-                        updatePost(postId);
-                    };
-                }
-            } catch (e) {
-                console.error('Error parsing post data:', e);
-                alert('Error loading post data');
-            }
-        } else if (xhr.readyState === 4) {
-            console.error('Failed to load post:', xhr.statusText);
-            alert('Failed to load post for editing');
+    fetch(`${root_url}/api/posts/${postId}`, {
+        method: 'GET',
+        credentials: 'include'
+    })
+    .then(response => response.json())
+    .then(post => {
+        document.getElementById('titleInput').value = post.title;
+        document.getElementById('contentInput').innerHTML = post.content;
+        
+        const editorTitle = document.getElementById('editorTitle');
+        if (editorTitle) {
+            editorTitle.textContent = 'Edit Post';
         }
-    };
-    
-    xhr.onerror = function() {
-        console.error('Network error occurred');
-        alert('Network error occurred while loading post');
-    };
-    
-    xhr.send();
+        
+        if (typeof Prism !== 'undefined') {
+            const codeBlocks = document.querySelectorAll('pre code');
+            codeBlocks.forEach(block => Prism.highlightElement(block));
+        }
+        
+        const postSection = document.getElementById('postSection');
+        if (postSection) {
+            postSection.style.display = 'block';
+        }
+        
+        const form = document.getElementById('postForm');
+        if (form) {
+            form.onsubmit = (e) => {
+                e.preventDefault();
+                updatePost(postId);
+            };
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to load post for editing');
+    });
 }
 
 function updatePost(postId) {
-    var title = document.getElementById('titleInput').value.trim();
-    var content = document.getElementById('contentInput').innerHTML;
+    const title = document.getElementById('titleInput').value.trim();
+    const content = document.getElementById('contentInput').innerHTML.trim();
     
-    // Clean up the content before submission
-    content = cleanupContent(content);
-    
-    // Basic validation
     if (!title || !content) {
         alert('Please fill in both title and content');
         return;
     }
-    
-    var xhr = new XMLHttpRequest();
-    xhr.open('PUT', root_url + "/api/posts/" + postId, true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
 
-    xhr.onload = function() {
-        if (xhr.status === 200) {
+    fetch(`${root_url}/api/posts/${postId}`, {
+        method: 'PUT',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ title, content })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
             window.location.href = '/blog.html';
         } else {
-            console.error('Server response:', xhr.responseText);
-            alert('Update failed: ' + xhr.statusText);
+            throw new Error(data.message || 'Update failed');
         }
-    };
-    
-    xhr.onerror = function() {
-        console.error('Network error occurred');
-        alert('Network error occurred');
-    };
-    
-    xhr.send(JSON.stringify({
-        title: title,
-        content: content
-    }));
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Update failed: ' + error.message);
+    });
 }
 
 function formatText(command) {
@@ -289,43 +261,34 @@ function formatText(command) {
 function submitPost(event) {
     event.preventDefault();
     
-    var title = document.getElementById('titleInput').value.trim();
-    var contentDiv = document.getElementById('contentInput');
-    var content = contentDiv ? contentDiv.innerHTML.trim() : '';
+    const title = document.getElementById('titleInput').value.trim();
+    const content = document.getElementById('contentInput').innerHTML.trim();
     
-    // Debug logging
-    console.log('Title:', title);
-    console.log('Content:', content);
-    
-    // Basic validation
     if (!title || !content) {
         alert('Please fill in both title and content');
         return;
     }
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', root_url + "/api/posts", true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    
-    // Create the post data object with both fields
-    var postData = {
-        title: title,
-        content: content
-    };
-    
-    // Debug logging of the final data being sent
-    console.log('Sending post data:', postData);
-    
-    xhr.onload = function() {
-        if (xhr.status === 200) {
+    fetch(`${root_url}/api/posts`, {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ title, content })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
             window.location.href = '/blog.html';
         } else {
-            console.error('Server response:', xhr.responseText);
-            alert('Post failed: ' + xhr.statusText);
+            throw new Error(data.message || 'Post failed');
         }
-    };
-    
-    xhr.send(JSON.stringify(postData));
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Post failed: ' + error.message);
+    });
 }
 
 function insertCode() {
