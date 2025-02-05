@@ -58,7 +58,6 @@ function displayPost(post) {
     
     // Initialize Prism.js highlighting
     if (typeof Prism !== 'undefined') {
-        // Highlight all code blocks
         var codeBlocks = document.querySelectorAll('pre code');
         codeBlocks.forEach(function(block) {
             Prism.highlightElement(block);
@@ -70,17 +69,21 @@ function displayPost(post) {
                        (post.modified && post.modified !== post.created ? 
                        '<br>Last Modified: ' + formatDateTime(post.modified) : '');
     
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", root_url + "/api/check-auth", true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            var response = JSON.parse(xhr.responseText);
-            if (response.isAuthenticated) {
-                document.getElementById('postControls').style.display = 'flex';
-            }
+    // Update auth check to use fetch
+    fetch(`${root_url}/api/check-auth`, {
+        method: 'GET',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
         }
-    };
-    xhr.send();
+    })
+    .then(response => response.json())
+    .then(response => {
+        if (response.isAuthenticated) {
+            document.getElementById('postControls').style.display = 'flex';
+        }
+    })
+    .catch(error => console.error('Auth check error:', error));
 }
 
 function checkAuthStatus() {

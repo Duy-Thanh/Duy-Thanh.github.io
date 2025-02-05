@@ -23,24 +23,21 @@ function continueAsGuest() {
         document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); 
     });
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", root_url + "/api/guest", true);
-    xhr.withCredentials = true;
-    xhr.setRequestHeader("Content-Type", "application/json");
-    
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                // Check for redirect parameter using IE11 compatible method
-                var redirect = getQueryParam('redirect');
-                
-                // Redirect based on parameter or default to files
-                window.location.replace(redirect === 'files' ? '/files.html' : '/files.html');
-            }
+    fetch(`${root_url}/api/guest`, {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
         }
-    };
-    
-    xhr.send(JSON.stringify({}));
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            var redirect = getQueryParam('redirect');
+            window.location.replace(redirect === 'files' ? '/files.html' : '/files.html');
+        }
+    })
+    .catch(error => console.error('Guest login error:', error));
 }
 
 function handleLogin() {
@@ -48,43 +45,42 @@ function handleLogin() {
     var password = document.getElementById("password").value.trim();
     var messageElement = document.getElementById("message");
     
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", root_url + "/api/login", true);
-    xhr.withCredentials = true;
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-            try {
-                var data = JSON.parse(xhr.responseText);
-                if (data.success) {
-                    messageElement.style.color = "green";
-                    messageElement.textContent = "Login successful!";
-                    
-                    // Add a small delay before redirecting to ensure session is set
-                    setTimeout(function() {
-                        var redirect = getQueryParam('redirect');
-                        if (redirect === 'files') {
-                            window.location.href = '/files.html';
-                        } else if (redirect === 'blog') {
-                            window.location.href = '/blog.html';
-                        } else {
-                            window.location.href = '/files.html';
-                        }
-                    }, 300); // 300ms delay
+    fetch(`${root_url}/api/login`, {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            username: username,
+            password: password
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            messageElement.style.color = "green";
+            messageElement.textContent = "Login successful!";
+            
+            // Add a small delay before redirecting
+            setTimeout(function() {
+                var redirect = getQueryParam('redirect');
+                if (redirect === 'files') {
+                    window.location.href = '/files.html';
+                } else if (redirect === 'blog') {
+                    window.location.href = '/blog.html';
                 } else {
-                    messageElement.textContent = data.message || "Login failed";
+                    window.location.href = '/files.html';
                 }
-            } catch (error) {
-                messageElement.textContent = "An error occurred. Please try again.";
-            }
+            }, 300);
+        } else {
+            messageElement.textContent = data.message || "Login failed";
         }
-    };
-
-    xhr.send(JSON.stringify({
-        username: username,
-        password: password
-    }));
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        messageElement.textContent = "An error occurred. Please try again.";
+    });
 }
 
 // Add event listener for form submission
