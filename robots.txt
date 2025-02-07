@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nekkochan0x7.zapto.org/sitemap.xml 
